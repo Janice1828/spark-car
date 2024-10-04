@@ -7,9 +7,9 @@ import Navbar from 'react-bootstrap/Navbar';
 const Contactsnav = ({ contacts, links }) => {
     return (
         <>
-            <div className='navbar px-md-5 px-3' style={{ background: "#222733" }}>
+            <div className='navbar px-md-6 py-3' style={{ background: "#222733" }}>
                 <div className="row w-100 m-auto p-0 gx-0">
-                    <div className="col-6 d-flex gap-3">{contacts.map((contact, key) => (
+                    <div className="col-6 d-flex gap-4">{contacts.map((contact, key) => (
                         <div className='text-light' key={key}>
                             <div className='d-flex gap-2 align-items-center'>
                                 <i className={`${contact.icon} fs-14`}></i>

@@ -19,7 +19,7 @@ const Explore = ({ packages }) => {
                                 <h3 className='fw-bold'>2000</h3>
                             </div>
                             <div>
-                                <a href="#" className='btn fs-14 fw-bolder btn-bg-color text-light rounded-1 px-3'>Rent Now</a>
+                                <a href="#" className='btn fs-14 fw-bolder btn-bg-color text-light rounded-1 '>Rent Now</a>
                             </div>
                         </div>
                     </div>

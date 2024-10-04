@@ -14,6 +14,7 @@ import Rentalavailableplace from "../components/home/Rentalavailableplace"
 import FurtherInformation from "../components/home/FurtherInformation"
 import Footer from '../components/nav/Footer';
 import navLogo from "../assets/Images/spark-car-nav-logo-1.png"
+import Cartype from '../components/home/Cartype';
 
 const Home = () => {
     const contacts = [
@@ -293,34 +294,35 @@ const Home = () => {
         },
     ]
     return (
-        <div className="container-fluid gx-0">
+        <div className="container-fluid gx-0 gy-0">
             <div>
                 <Contactsnav contacts={contacts} links={socialMediaLinks} />
-                <Pagesnav linksList={navLinks} logo={navLogo} />
-                <div className='px-md-5 px-3'>
+                <div className='px-md-6 home-services'>
+                    <Pagesnav linksList={navLinks} logo={navLogo} />
                     <Service servicesList={services} />
                 </div>
-                <div className='px-md-5 px-3'>
+                <Cartype />
+                <div className='px-md-6 '>
                     <Whysparkcar benefitsList={benefits} />
                 </div>
-                <div className="px-md-5 px-3"><Records records={recordList} /></div>
-                <div className="px-md-5 px-3">
+                <div className="px-md-6 records d-flex flex-column justify-content-center"><Records records={recordList} /></div>
+                <div className="px-md-6 ">
                     <Tourpackage packages={tourPackages} />
                 </div>
-                <div className="px-md-5 px-3">
+                <div className="px-md-6 ">
                     <Adventure adventureServices={adventureServicesList} />
                 </div>
-                <div className="px-md-5 px-3">
+                <div className="px-md-6">
                     <Explore packages={exploringPackages} />
                     <Latestblog blogs={blogList} />
                     <Packages packages={packagesList} />
                     <Questions questions={questionAnser} />
                     <Rentalavailableplace places={placesList} />
                 </div>
-                <div className="px-md-5 px-3 text-light" style={{ background: "#199E1C" }}>
+                <div className="px-md-6 text-light mt-5" style={{ background: "#199E1C" }}>
                     <FurtherInformation number={contactNo} />
                 </div>
-                <div className="px-md-5 px-3 bg-dark">
+                <div className="px-md-6 bg-dark bg-opacity-100">
                     <Footer />
                 </div>
             </div>

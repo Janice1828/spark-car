@@ -26,6 +26,12 @@
 .btn-bg-color {
   background: #1ecb15;
 }
+.text-green {
+  color: green;
+}
+.text-custom-green {
+  color: #1ecb15;
+}
 .fs-16 {
   font-size: 16px;
 }
@@ -34,4 +40,25 @@
 }
 .fs-18 {
   font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .px-md-6 {
+    padding: 0px 30px;
+  }
+}
+.px-md-6 {
+  padding: 0px 110px;
+}
+/* For Home Page */
+.home-services {
+  background-image: url(./assets/Images/spark-car-home-bg.png);
+  color: #fff;
+}
+.records {
+  background-image: url(./assets/Images/spark-car-home-car-list.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: center;
+  color: #fff;
 }
