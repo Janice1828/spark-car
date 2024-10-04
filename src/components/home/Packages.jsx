@@ -1,10 +1,16 @@
 import React from 'react'
 
-const Packages = () => {
-    const packagesList = [""];
+const Packages = ({ packages }) => {
 
     return (
-        <div>Packages</div>
+        <div>
+            <h5>Packages</h5>
+            <div>
+                {packages.map((item, key) => (
+                    <img key={key} src={item} />
+                ))}
+            </div>
+        </div>
     )
 }
 

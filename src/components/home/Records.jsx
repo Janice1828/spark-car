@@ -1,26 +1,18 @@
 import React from 'react'
 
-const Records = () => {
-    const recordList = [
-        {
-            count: 5000,
-            title: "No of Vehicles"
-        },
-        {
-            count: "2 Lakh +",
-            title: "Customers Served Annually"
-        },
-        {
-            count: 5000,
-            title: "No of Drivers"
-        },
-        {
-            count: 30,
-            title: "Years of Experience"
-        }
-    ]
+const Records = ({ records }) => {
     return (
-        <div>Records</div>
+        <>
+            <div>Records</div>
+            {records.map((record, key) => (
+                <div className='card' key={key}>
+                    <div className="card-title">
+                        <h5>{record.count}</h5>
+                        <p>{record.title}</p>
+                    </div>
+                </div>
+            ))}
+        </>
     )
 }
 

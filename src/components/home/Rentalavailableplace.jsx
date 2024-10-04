@@ -1,83 +1,18 @@
 import React from 'react'
 
-const Rentalavailableplace = () => {
-    const placesList = [
-        {
-            title: "Rent a Car in Kathmandu",
-            isAvailable: "Yes",
-        }
-        , {
-            title: "Rent a Car in Lalitpur",
-            isAvailable: "No"
-        }
-        ,
-        {
-            title: "Rent a Car in Bhaktapur",
-            isAvailable: "No"
-        },
-        {
-            title: "Rent a Car in Pokhara",
-            isAvailable: "Yes"
-        },
-        {
-            title: "Rent a Car in Chitwan",
-            isAvailable: "Yes"
-        },
-        {
-            title: "Rent a Car in Dang",
-            isAvailable: "No"
-        },
-        {
-            title: "Rent a Car in Dhangadh",
-            isAvailable: "No"
-        },
-        {
-            title: "Rent a Car in Itahari",
-            isAvailable: "No"
-        },
-        {
-            title: "Rent a Car in Ilam",
-            isAvailable: "No"
-        },
-        {
-            title: "Rent a Car in Hetauda",
-            isAvailable: "Yes"
-        },
-        {
-            title: "Rent a Car in Nepalgunj",
-            isAvailable: "Yes"
-        },
-        {
-            title: "Rent a Car in Gorkha",
-            isAvailable: "Yes"
-        },
-        {
-            title: "Rent a Car in Bharatpur",
-            isAvailable: "No"
-        },
-        {
-            title: "Rent a Car in Biratnagar",
-            isAvailable: "Yes"
-        },
-        {
-            title: "Rent a Car in Birgunj",
-            isAvailable: "Yes"
-        },
-        {
-            title: "Rent a Car in Lumbini",
-            isAvailable: "Yes"
-        },
-        {
-            title: "Rent a Car in Dharan",
-            isAvailable: "Yes"
-        },
-        {
-            title: "Rent a Car in Butwal",
-            isAvailable: "Yes"
-        },
-    ]
+const Rentalavailableplace = ({ places }) => {
+
     return (
-        <div>Rentalavailableplace</div>
+        <div>
+            <h4>Car Rental Service In Nepal</h4>
+            <div className="row">
+                {places.map((item, key) => (
+                    <div key={key} className='col-4'>
+                        {item.title}
+                    </div>
+                ))}
+            </div>
+        </div >
     )
 }
 

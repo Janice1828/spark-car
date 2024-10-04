@@ -1,25 +1,6 @@
 import React from 'react'
 
-const Service = () => {
-    const services = [{
-        title: "Choose Your Favorite Vehicle",
-        content: "Select your preferred vehicle, tailored to your journey as per your requirement."
-    },
-    {
-        title: "Make a Booking",
-        content: "You can make easy bookings through our user-friendly app or a simple phone call."
-    },
-    {
-        title: "Pick-Up Location & Date",
-        content: "Select your nearest location with the date and time for your journey."
-
-    }
-        ,
-    {
-        title: "Sit Back & Relax",
-        content: "Sit back, relax, and let your safe and convenient journey begin with Spark Car. "
-    }
-    ]
+const Service = ({ servicesList }) => {
     return (
         <div>
             <h1>Looking for a Car? Rent a Car in just Few Easy Steps.
@@ -67,37 +48,15 @@ const Service = () => {
 
                         </form>
                     </div>
-
                 </div>
             </div>
             <ul>
-                <li>
-                    <h4>Choose Your Favorite Vehicle
-                    </h4>
-                    <p>Select your preferred vehicle, tailored to your journey as per your requirement.</p>
-                </li>
-                <li>
-                    <h4>Make a Booking
-
-                    </h4>
-                    <p>You can make easy bookings through our user-friendly app or a simple phone call.
-                    </p>
-                </li>
-                <li>
-                    <h4>Pick-Up Location & Date
-
-                    </h4>
-                    <p>
-                        Select your nearest location with the date and time for your journey.
-
-                    </p>
-                </li>
-                <li>
-                    <h4>Sit Back & Relax
-                    </h4>
-                    <p>Sit back, relax, and let your safe and convenient journey begin with Spark Car.
-                    </p>
-                </li>
+                {servicesList.map((service, key) => (
+                    <div key={key}>
+                        <h5>{service.title}</h5>
+                        <p>{service.content}</p>
+                    </div>
+                ))}
             </ul>
         </div>
     )
