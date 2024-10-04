@@ -6,17 +6,17 @@ const Whysparkcar = ({ benefitsList }) => {
         <>
             <div className='row'>
                 {benefitsList.map((benefit, key) => (
-                    <div key={key}>
+                    <div key={key} className='col-6'>
                         <i></i>
                         <div>
-                            <h5>{benefit.title}</h5>
+                            <h6 className='fw-600'>{benefit.title}</h6>
                             <p>
                                 {benefit.content}
                             </p>
                         </div>
                     </div>
                 ))}
-            </div></>
+            </div ></>
     )
 }
 

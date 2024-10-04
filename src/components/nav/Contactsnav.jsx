@@ -11,17 +11,17 @@ const Contactsnav = ({ contacts, links }) => {
                 <div className="row w-100 m-auto p-0 gx-0">
                     <div className="col-6 d-flex gap-3">{contacts.map((contact, key) => (
                         <div className='text-light' key={key}>
-                            <div className='d-flex gap-2'>
-                                <i className={contact.icon}></i>
-                                <span>{contact.value}</span>
+                            <div className='d-flex gap-2 align-items-center'>
+                                <i className={`${contact.icon} fs-14`}></i>
+                                <span className='fs-14 fw-100'>{contact.value}</span>
                             </div>
                         </div>
                     ))}
 
                     </div>
-                    <div className='col-6 text-light justify-content-end gap-2 d-flex align-items-center'>
+                    <div className='col-6 text-light justify-content-end gap-3 d-flex align-items-center'>
                         {links.map((media, key) => (
-                            <i className={media} key={key}></i>
+                            <i className={`${media} fs-15 fw-400`} key={key}></i>
                         ))}
                     </div>
                 </div>

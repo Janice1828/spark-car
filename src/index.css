@@ -8,3 +8,30 @@
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
+.fs-14 {
+  font-size: 14px;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.btn-bg-color {
+  background: #1ecb15;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-18 {
+  font-size: 18px;
+}

@@ -4,10 +4,10 @@ const Rentalavailableplace = ({ places }) => {
 
     return (
         <div>
-            <h4>Car Rental Service In Nepal</h4>
+            <h2 className='fw-bold'>Car Rental Service In Nepal</h2>
             <div className="row">
                 {places.map((item, key) => (
-                    <div key={key} className='col-4'>
+                    <div key={key} className='col-4 fw-400'>
                         {item.title}
                     </div>
                 ))}

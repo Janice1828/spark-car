@@ -9,17 +9,19 @@ function Pagesnav({ linksList, logo }) {
                 <div className='w-100'>
                     <div className='d-flex justify-content-between'>
                         <div className='bg-dark'>
-                            <img src={logo} alt="" />
+                            <img src={logo} alt="" style={{ height: "50px" }} />
                         </div>
                         <div>
-                            <ul>
+                            <ul className='d-flex gap-5'>
                                 {linksList.map((link, key) => (
-                                    <Link key={key}>{link}</Link>
+                                    <li key={key} className='list-group-item fs-15'>
+                                        <Link className='text-decoration-none text-dark fw-600'>{link}</Link>
+                                    </li>
                                 ))}
                             </ul>
                         </div>
                         <div>
-                            <a href='#' className="btn btn-success">Sign In</a>
+                            <a href='#' className="btn btn-bg-color text-light fs-14 fw-bold rounded-1 px-4 ">Sign In</a>
                         </div>
                     </div>
                     <button className="navbar-toggler d-block d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

@@ -297,19 +297,32 @@ const Home = () => {
             <div>
                 <Contactsnav contacts={contacts} links={socialMediaLinks} />
                 <Pagesnav linksList={navLinks} logo={navLogo} />
-                <Service servicesList={services} />
-                <Whysparkcar benefitsList={benefits} />
-                <Records records={recordList} />
-                <Tourpackage packages={tourPackages} />
-                <Adventure adventureServices={adventureServicesList} />
-                <Explore packages={exploringPackages} />
-                <Latestblog blogs={blogList} />
-                <Packages packages={packagesList} />
-                <Questions questions={questionAnser} />
-                <Rentalavailableplace places={placesList} />
-                <FurtherInformation number={contactNo} />
-                <Footer />
-
+                <div className='px-md-5 px-3'>
+                    <Service servicesList={services} />
+                </div>
+                <div className='px-md-5 px-3'>
+                    <Whysparkcar benefitsList={benefits} />
+                </div>
+                <div className="px-md-5 px-3"><Records records={recordList} /></div>
+                <div className="px-md-5 px-3">
+                    <Tourpackage packages={tourPackages} />
+                </div>
+                <div className="px-md-5 px-3">
+                    <Adventure adventureServices={adventureServicesList} />
+                </div>
+                <div className="px-md-5 px-3">
+                    <Explore packages={exploringPackages} />
+                    <Latestblog blogs={blogList} />
+                    <Packages packages={packagesList} />
+                    <Questions questions={questionAnser} />
+                    <Rentalavailableplace places={placesList} />
+                </div>
+                <div className="px-md-5 px-3 text-light" style={{ background: "#199E1C" }}>
+                    <FurtherInformation number={contactNo} />
+                </div>
+                <div className="px-md-5 px-3 bg-dark">
+                    <Footer />
+                </div>
             </div>
         </div>
     )

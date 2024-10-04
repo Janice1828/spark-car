@@ -8,12 +8,12 @@ const Adventure = ({ adventureServices }) => {
                 <h2>Let Your Adventure Begin
                 </h2>
             </div>
-            <div>
+            <div className='d-flex'>
                 {adventureServices.map((service, key) => (
                     <div key={key}>
                         <i></i>
-                        <p>{service.title}</p>
-                        <p>{service.content}</p>
+                        <p className='fs-16 fw-400'>{service.title}</p>
+                        <p className='fs-16 fw-400'>{service.content}</p>
                     </div>
                 ))}
             </div>
