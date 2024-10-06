@@ -5,7 +5,7 @@ const Whysparkcar = ({ benefitsList }) => {
     return (
         <>
             <div className='row my-5'>
-                <div className="col-12 mb-4"><h3 className='fw-600 text-center'>Why Spark car?</h3></div>
+                <div className="col-12 mb-4"><h2 className='home-headings'>Why Spark car?</h2></div>
                 {benefitsList.map((benefit, key) => (
                     <div key={key} className='col-6'>
                         <i></i>

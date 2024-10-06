@@ -2,10 +2,10 @@ import React from 'react'
 
 const FurtherInformation = ({ number }) => {
     return (
-        <div className='row py-5 mt-5' >
+        <div className='row py-5 ' >
             <div className="col-6">
-                <h2 className='fw-500' style={{ lineHeight: "55px" }}>
-                    Call us for further information. Customer care is here to help you anytime.
+                <h2 className='fw-500' style={{ lineHeight: "55px", letterSpacing: "-3px" }}>
+                    Call us for further information.<br /> Customer care is here to help you<br /> anytime.
                 </h2>
             </div>
             <div className="col-6 d d-flex flex-column align-items-end">

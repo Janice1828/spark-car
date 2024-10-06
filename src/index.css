@@ -41,6 +41,9 @@
 .fs-18 {
   font-size: 18px;
 }
+.text-grey {
+  color: rgb(114, 114, 114);
+}
 @media screen and (max-width: 768px) {
   .px-md-6 {
     padding: 0px 30px;
@@ -61,4 +64,21 @@
   height: 400px;
   background-position: center;
   color: #fff;
+}
+.home-adventure-container {
+  background-image: url(./assets/Images/adventure-bg.png);
+  color: #fff;
+  background-position-x: -72px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+.home-headings {
+  font-size: 28px;
+  letter-spacing: -1.8px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: rgb(3, 27, 78);
+  text-align: center;
+  font-weight: 650;
 }

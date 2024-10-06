@@ -15,7 +15,15 @@ import FurtherInformation from "../components/home/FurtherInformation"
 import Footer from '../components/nav/Footer';
 import navLogo from "../assets/Images/spark-car-nav-logo-1.png"
 import Cartype from '../components/home/Cartype';
-
+import Pokhara from "../assets/Images/pokhara.jpg";
+import Ilam from "../assets/Images/ilam.jpg";
+import Mustang from "../assets/Images/mustang.jpg";
+import Lumbini from "../assets/Images/lumbini.jpg"
+import PickDrop from "../assets/Images/pick-drop.png";
+import blogOne from "../assets/Images/blog-1.png"
+import blogTwo from "../assets/Images/blog-2.png"
+import blogThree from "../assets/Images/blog-3.png"
+import Vippickup from "../assets/Images/vip-explore.png"
 const Home = () => {
     const contacts = [
         {
@@ -94,92 +102,87 @@ const Home = () => {
     ]
     const tourPackages = [
         {
-            img: "",
+            img: Pokhara,
             placeName: "Pokhara",
             cost: 17000,
             time: "4D"
         },
         {
-            img: "",
+            img: Mustang,
             placeName: "Mustang",
             cost: 17000,
             time: "8D"
         },
         {
-            img: "",
+            img: Lumbini,
             placeName: "Lumbini",
             cost: 20000,
             time: "7D"
         },
-        {
-            img: "",
-            placeName: "Ilam",
-            cost: 15000,
-            time: "4D"
-        },
+
     ]
     const adventureServicesList = [
         {
-            icon: "",
+            icon: "fa-solid fa-trophy",
             title: "First Class Services",
             content: "Where luxury meets exceptional care, creating unforgettable moments and exceeding your every expectation."
         },
         {
-            icon: "",
+            icon: "fa-solid fa-road",
             title: "24/7 Customer Service",
             content: "Reliable support when you need it most, keeping you on the move with confidence and peace of mind."
 
         },
         {
-            icon: "",
+            icon: "fa-solid fa-map-pin",
             title: "Pick-Up & Drop-Off",
             content: "Enjoy pickup and drop-off services, adding an extra layer of ease to your car rental experience."
         }
     ]
     const exploringPackages = [
         {
-            img: "",
+            img: PickDrop,
             title: "Domestic Tour Cars",
             cost: 2000,
             packageTitle: "Pick and drop inside ringroad",
             passengerNumber: 4
         },
         {
-            img: "",
+            img: Vippickup,
             title: "Vip Delegates Car",
             cost: 5000,
             packageTitle: "Vip delegates car service",
             passengerNumber: 4
         },
         {
-            img: "",
+            img: PickDrop,
             title: "Pick and drop inside ringroad by car",
             cost: 3000,
             packageTitle: "Pick and drop inside ringroad",
             passengerNumber: 2
         },
-        {
-            img: "",
-            title: "Airport Pickup and dropoff service",
-            cost: 1700,
-            packageTitle: "Airport pickup and dropofff service",
-            passengerNumber: 3
-        },
+        // {
+        //     img: "",
+        //     title: "Airport Pickup and dropoff service",
+        //     cost: 1700,
+        //     packageTitle: "Airport pickup and dropofff service",
+        //     passengerNumber: 3
+        // },
     ]
     const blogList = [{
-        img: "",
+        img: blogOne,
         postedDate: "16 Sep",
         title: "Dashain Travels Made Easy with Spark Car Rental: Pre-Booking Now Open!",
         content: "This year, Spark Car Rental is here to make your Dashain travels easier than ever, offering pre-booking services to help you secure the pe.."
     },
     {
-        img: "",
+        img: blogTwo,
         postedDate: "25 Aug",
         title: "Hiace Van Rental in Kathmandu, Nepal",
         content: "Hiace van rental in Kathmandu, Nepal is best when you are traveling in a group, renting a Hiace in Kathmandu can be the perfect solution."
     },
     {
-        img: "",
+        img: blogThree,
         postedDate: "12 Aug",
         title: "Why Customers Love Renting from Spark Car: Nepal’s Leading Vehicle Rental",
         content: "As Nepal's first ISO-certified vehicle rental company, Spark Car has set the benchmark for quality, reliability, and customer satisfaction.."
@@ -309,7 +312,7 @@ const Home = () => {
                 <div className="px-md-6 ">
                     <Tourpackage packages={tourPackages} />
                 </div>
-                <div className="px-md-6 ">
+                <div className="px-md-6 home-adventure-container pt-5 pb-5">
                     <Adventure adventureServices={adventureServicesList} />
                 </div>
                 <div className="px-md-6">
@@ -319,10 +322,12 @@ const Home = () => {
                     <Questions questions={questionAnser} />
                     <Rentalavailableplace places={placesList} />
                 </div>
-                <div className="px-md-6 text-light mt-5" style={{ background: "#199E1C" }}>
-                    <FurtherInformation number={contactNo} />
+                <div className=" pt-4">
+                    <div className='px-md-6 text-light mt-5' style={{ background: "#199E1C" }}>
+                        <FurtherInformation number={contactNo} />
+                    </div>
                 </div>
-                <div className="px-md-6 bg-dark bg-opacity-100">
+                <div className="px-md-6 bg-opacity-100" style={{ background: "#000" }}>
                     <Footer />
                 </div>
             </div>
