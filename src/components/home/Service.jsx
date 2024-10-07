@@ -51,7 +51,7 @@ const Service = ({ servicesList }) => {
         <div className='home-service-container'>
             <h3 className='fw-600 mt-5 mb-5' style={{ letterSpacing: "-2px" }}>Looking for a <span style={{ color: "#1ecb15" }}>Car</span>? Rent a Car in just Few Easy Steps.
             </h3>
-            <div className="card">
+            <div className="card mb-5">
                 <div className="card-body row py-3">
                     <div className="col-4">
                         <p className='fs-15 fw-600'>Choose a service</p>
@@ -227,14 +227,14 @@ const Service = ({ servicesList }) => {
                     </div>
                 </div>
             </div >
-            <ul className='d-flex mt-5 gap-3 mb-0'>
+            <div className='d-flex pt-5 mb-0'>
                 {servicesList.map((service, key) => (
-                    <div key={key}>
+                    <div key={key} className={`service-${key}`}>
                         <h5 style={{ width: "255px", fontSize: "18px" }} className='fw-600 mb-3'>{service.title}</h5>
                         <p className='fs-14' style={{ width: "280px" }}>{service.content}</p>
                     </div>
                 ))}
-            </ul>
+            </div>
         </div >
     )
 }

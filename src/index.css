@@ -56,6 +56,10 @@
 .home-services {
   background-image: url(./assets/Images/spark-car-home-bg.png);
   color: #fff;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .records {
   background-image: url(./assets/Images/spark-car-home-car-list.png);
@@ -103,4 +107,55 @@
   height: 35px !important;
   display: flex !important;
   align-items: center !important;
+}
+.service-0::before {
+  content: "1";
+  top: -50px;
+  position: relative;
+  background: #1ecb15;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.service-1::before {
+  content: "2";
+  top: -50px;
+  position: relative;
+  background: #1ecb15;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.service-2::before {
+  content: "3";
+  top: -50px;
+  position: relative;
+  background: #1ecb15;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.service-3::before {
+  content: "4";
+  top: -50px;
+  position: relative;
+  background: #1ecb15;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.service-0,
+.service-1,
+.service-2 {
+  border-top: 1px solid #199e1c;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+
+.service-3 {
+  padding-top: 40px;
 }
