@@ -75,6 +75,8 @@
   background-position-x: -72px;
   background-position-y: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .home-headings {
   font-size: 28px;
@@ -158,4 +160,15 @@
 
 .service-3 {
   padding-top: 40px;
+}
+.carousel-btn-bg-color {
+  background-color: #333333;
+  border-radius: 50%;
+  background-size: 21px;
+  height: 40px;
+  width: 40px;
+}
+.react-multi-carousel-track {
+  display: flex;
+  gap: 15px;
 }

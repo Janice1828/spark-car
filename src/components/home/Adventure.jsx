@@ -3,7 +3,7 @@ import React from 'react'
 const Adventure = ({ adventureServices }) => {
 
     return (
-        <div className='row pb-3'>
+        <div className='row pb-3 position-relative' style={{ zIndex: "1" }}>
 
             <div className='d-flex gap-4'>
                 <div style={{ paddingRight: "40px" }}>

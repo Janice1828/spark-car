@@ -161,13 +161,13 @@ const Home = () => {
             packageTitle: "Pick and drop inside ringroad",
             passengerNumber: 2
         },
-        // {
-        //     img: "",
-        //     title: "Airport Pickup and dropoff service",
-        //     cost: 1700,
-        //     packageTitle: "Airport pickup and dropofff service",
-        //     passengerNumber: 3
-        // },
+        {
+            img: Vippickup,
+            title: "Airport Pickup and dropoff service",
+            cost: 1700,
+            packageTitle: "Airport pickup and dropofff service",
+            passengerNumber: 3
+        },
     ]
     const blogList = [{
         img: blogOne,
