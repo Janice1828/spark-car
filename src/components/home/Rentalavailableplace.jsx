@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Rentalavailableplace = ({ places }) => {
-    console.log(places)
     return (
         <div className='mb-5 mt-5'>
             <h2 className='home-headings pt-5 pb-3' style={{ color: "rgb(25, 158, 28)" }}>Car Rental Service In Nepal</h2>

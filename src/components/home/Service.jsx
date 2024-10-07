@@ -5,7 +5,6 @@ import Hiredriver from "../../assets/Images/spark-car-home-hire-driver.png";
 import Selfdriving from "../../assets/Images/spark-car-home-self-driving.png"
 const Service = ({ servicesList }) => {
     const [check, setCheck] = useState("rent-car")
-    console.log(check)
     $(document).ready(function () {
         $(".pick-up-location").select2(
             {

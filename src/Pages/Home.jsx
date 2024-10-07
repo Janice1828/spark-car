@@ -119,7 +119,6 @@ const Home = () => {
             cost: 20000,
             time: "7D"
         },
-
     ]
     const adventureServicesList = [
         {
@@ -131,7 +130,6 @@ const Home = () => {
             icon: "fa-solid fa-road",
             title: "24/7 Customer Service",
             content: "Reliable support when you need it most, keeping you on the move with confidence and peace of mind."
-
         },
         {
             icon: "fa-solid fa-map-pin",
