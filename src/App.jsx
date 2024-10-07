@@ -6,8 +6,6 @@ import { Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ContainerFluidBreakpointExample from './Pages/ContainerFluidBreakpointExample'
-
-
 function App() {
   const [count, setCount] = useState(0)
 

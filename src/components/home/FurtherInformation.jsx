@@ -9,7 +9,7 @@ const FurtherInformation = ({ number }) => {
                 </h2>
             </div>
             <div className="col-6 d d-flex flex-column align-items-end">
-                <i class="fa-solid fa-phone mb-2" style={{ fontSize: "40px" }}></i>
+                <i className="fa-solid fa-phone mb-2" style={{ fontSize: "40px" }}></i>
                 <h5 className='fs-15' style={{ letterSpacing: "4px", fontWeight: "550" }}>Call Us Now
                 </h5>
                 <h2 className='fw-bold mb-3'>{number}</h2>

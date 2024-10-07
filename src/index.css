@@ -82,3 +82,25 @@
   text-align: center;
   font-weight: 650;
 }
+.home-service-container input,
+.home-service-container select {
+  box-shadow: none !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: transparent !important;
+  color: black;
+  border: 2px solid green;
+}
+.nav-pills .nav-link.active img {
+  transform: translateX(-15px);
+}
+.select2-selection__rendered,
+.select2-search__field {
+  outline: none;
+}
+.select2-selection {
+  height: 35px !important;
+  display: flex !important;
+  align-items: center !important;
+}

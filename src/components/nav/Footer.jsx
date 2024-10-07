@@ -19,14 +19,14 @@ const Footer = () => {
                 <div className="col-3">
                     <h5 className='fs-18 fw-600 mb-3'>Contact Info
                     </h5>
-                    <p className='fs-14 fw-500 d-flex gap-2 align-items-center'><i class="fa-solid fa-location-dot text-green fs-15"></i><span>Trade Tower Thapathali, address2</span></p>
-                    <p className='fs-14 fw-500 d-flex gap-2 align-items-center'><i class="fa-solid fa-phone text-green fs-15"></i><span>01-5971616/ 9801101924</span></p>
-                    <p className='fs-14 fw-500 d-flex gap-2 align-items-center'><i class="fa-solid fa-envelope text-green fs-15"></i><span>info@sparkcar.org</span></p>
+                    <p className='fs-14 fw-500 d-flex gap-2 align-items-center'><i className="fa-solid fa-location-dot text-green fs-15"></i><span>Trade Tower Thapathali, address2</span></p>
+                    <p className='fs-14 fw-500 d-flex gap-2 align-items-center'><i className="fa-solid fa-phone text-green fs-15"></i><span>01-5971616/ 9801101924</span></p>
+                    <p className='fs-14 fw-500 d-flex gap-2 align-items-center'><i className="fa-solid fa-envelope text-green fs-15"></i><span>info@sparkcar.org</span></p>
                     <h5 className='fs-18 fw-600 mb-3'>ISO Certification</h5>
                     <div className='d-flex gap-2'>
                         {/* <img src="" alt="" /> */}
-                        {isoCertifications.map((certificate) => (
-                            <img src={certificate} alt='' style={{ width: "80px" }} />
+                        {isoCertifications.map((certificate, key) => (
+                            <img src={certificate} key={key} alt='' style={{ width: "80px" }} />
                         ))}
                     </div>
 
@@ -44,8 +44,8 @@ const Footer = () => {
                     <h5 className='fs-18 fw-600 mb-3'>Social Network</h5>
                     <div className='d-flex gap-1'>
                         {footerSocialMediaLinks.map((media, key) => (
-                            <div className='bg-light rounded-circle d-flex align-items-center justify-content-center' style={{ height: "30px", width: "30px" }}>
-                                <i key={key} className={`${media} text-success`} style={{ fontSize: "17px" }}></i>
+                            <div key={key} className='bg-light rounded-circle d-flex align-items-center justify-content-center' style={{ height: "30px", width: "30px" }}>
+                                <i className={`${media} text-success`} style={{ fontSize: "17px" }}></i>
 
                             </div>
                         ))}

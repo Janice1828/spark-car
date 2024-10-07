@@ -21,7 +21,7 @@ const Tourpackage = ({ packages }) => {
                                     <h4 className='fw-bold'>NPR {item.cost}</h4>
                                 </div>
                                 <div>
-                                    <p className='fs-14 fw-500 text-end d-flex gap-1 align-items-center'><i class="fa-regular fa-clock text-primary fw-500"></i>{item.time}</p>
+                                    <p className='fs-14 fw-500 text-end d-flex gap-1 align-items-center'><i className="fa-regular fa-clock text-primary fw-500"></i>{item.time}</p>
                                     <button className="btn btn-sm btn-bg-color text-light fw-600 px-3 py-1">Buy</button>
                                 </div>
                             </div>
