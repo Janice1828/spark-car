@@ -59,24 +59,24 @@ const Home = () => {
     ]
     const benefits = [
         {
-            icon: " ",
+            icon: "fa-solid fa-trophy",
             title: "24-hour Customer Service",
             content: "We promise impeccable service by promptly addressing your queries and problems through our dedicated 24/7 customer support team."
 
         },
         {
-            icon: "",
+            icon: "fa-solid fa-road",
             title: "ISO Certification",
             content: "We are an ISO 9001, ISO 14001 and ISO 45001 certified car rental company with 20+ years of service excellence in Nepal"
         },
 
         {
-            icon: "",
+            icon: "fa-solid fa-tag",
             title: "Own Dedicated Workshop",
             content: "We ensure impeccable fleet management, with regular inspections for optimal vehicle performance and customer satisfaction."
         },
         {
-            icon: "",
+            icon: "fa-solid fa-map-pin",
             title: "All Over Nepal Service",
             content: "Our service spans all 7 provinces and 77 districts, ensuring accessibility for your transportation needs nationwide."
         },
