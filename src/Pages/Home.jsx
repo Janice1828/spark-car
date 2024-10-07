@@ -248,7 +248,7 @@ const Home = () => {
             isAvailable: "No"
         },
         {
-            title: "Rent a Car in Dhangadh",
+            title: "Rent a Car in Dhangadhi",
             isAvailable: "No"
         },
         {
