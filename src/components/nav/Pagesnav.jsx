@@ -2,7 +2,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-function Pagesnav({ linksList, logo }) {
+import logo from "../../assets/Images/spark-car-nav-logo-1.png"
+function Pagesnav() {
+    const linksList = ["Home", "Hire a Driver", "Corporate Rent", "Blog", "About", "Contact us"]
     return (
         <>
             <nav className="navbar bg-transparent ">

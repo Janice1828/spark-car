@@ -24,7 +24,6 @@ const Footer = () => {
                     <p className='fs-14 fw-500 d-flex gap-2 align-items-center'><i className="fa-solid fa-envelope text-green fs-15"></i><span>info@sparkcar.org</span></p>
                     <h5 className='fs-18 fw-600 mb-3'>ISO Certification</h5>
                     <div className='d-flex gap-2'>
-                        {/* <img src="" alt="" /> */}
                         {isoCertifications.map((certificate, key) => (
                             <img src={certificate} key={key} alt='' style={{ width: "80px" }} />
                         ))}

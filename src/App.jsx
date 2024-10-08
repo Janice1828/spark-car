@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ContainerFluidBreakpointExample from './Pages/ContainerFluidBreakpointExample'
+import Contactus from './Pages/Contactus'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -13,7 +14,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' Component={Home} />
-        <Route path='/test' Component={ContainerFluidBreakpointExample} />
+        <Route path='/contactus' Component={Contactus} />
       </Routes>
     </>
   )

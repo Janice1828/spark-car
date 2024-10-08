@@ -4,7 +4,19 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-const Contactsnav = ({ contacts, links }) => {
+const Contactsnav = () => {
+    const contacts = [
+        {
+            icon: "fa-solid fa-phone",
+            value: "01-5971616"
+        },
+        {
+            icon: "fa-solid fa-envelope",
+            value: "info@sparkcar.org"
+        }
+    ];
+    // const contactNo = contacts[0].value;
+    const links = ["fa-brands fa-facebook", "fa-brands fa-twitter", "fa-brands fa-youtube", "fa-brands fa-linkedin"]
     return (
         <>
             <div className='navbar px-md-6 py-3' style={{ background: "#222733" }}>

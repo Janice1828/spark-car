@@ -13,7 +13,6 @@ import Questions from "../components/home/Questions"
 import Rentalavailableplace from "../components/home/Rentalavailableplace"
 import FurtherInformation from "../components/home/FurtherInformation"
 import Footer from '../components/nav/Footer';
-import navLogo from "../assets/Images/spark-car-nav-logo-1.png"
 import Cartype from '../components/home/Cartype';
 import Pokhara from "../assets/Images/pokhara.jpg";
 import Ilam from "../assets/Images/ilam.jpg";
@@ -37,7 +36,7 @@ const Home = () => {
     ];
     const contactNo = contacts[0].value;
     const socialMediaLinks = ["fa-brands fa-facebook", "fa-brands fa-twitter", "fa-brands fa-youtube", "fa-brands fa-linkedin"]
-    const navLinks = ["Home", "Hire a Driver", "Corporate Rent", "Blog", "About", "Contact us"]
+   
     const services = [{
         title: "Choose Your Favorite Vehicle",
         content: "Select your preferred vehicle, tailored to your journey as per your requirement."
@@ -297,9 +296,9 @@ const Home = () => {
     return (
         <div className="container-fluid gx-0 gy-0">
             <div>
-                <Contactsnav contacts={contacts} links={socialMediaLinks} />
+                <Contactsnav />
                 <div className='px-md-6 home-services'>
-                    <Pagesnav linksList={navLinks} logo={navLogo} />
+                    <Pagesnav />
                     <Service servicesList={services} />
                 </div>
                 <Cartype />

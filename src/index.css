@@ -32,6 +32,9 @@
 .text-custom-green {
   color: #1ecb15;
 }
+.contactus-text-green {
+  color: #1ecb15;
+}
 .fs-16 {
   font-size: 16px;
 }
@@ -171,4 +174,22 @@
 .react-multi-carousel-track {
   display: flex;
   gap: 15px;
+}
+.contact-us-img {
+  background-image: url(./assets/Images/contact-us-bg.png);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contactus-container input,
+.contactus-container textarea {
+  background: #f9f9f9;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contactus-container textarea {
+  border: 2px solid #eeeeee;
+  border-radius: 6px;
 }
