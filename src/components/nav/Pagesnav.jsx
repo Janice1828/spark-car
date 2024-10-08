@@ -16,7 +16,7 @@ function Pagesnav() {
         ,
         {
             title: "Corporate Rent",
-            route: "/"
+            route: "/corporaterent"
         },
         {
             title: "Blog",

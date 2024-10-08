@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ContainerFluidBreakpointExample from './Pages/ContainerFluidBreakpointExample'
 import Contactus from './Pages/Contactus'
 import About from './Pages/About'
+import Corporaterent from './Pages/Corporaterent'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' Component={Home} />
         <Route path='/about' Component={About} />
         <Route path='/contactus' Component={Contactus} />
+        <Route path='/corporaterent' Component={Corporaterent} />
       </Routes>
     </>
   )
