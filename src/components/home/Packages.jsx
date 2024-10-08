@@ -7,14 +7,14 @@ const Packages = ({ packages }) => {
             <p className='fs-15 fw-500 mb-5 text-grey text-center'>Where your journey begins with an exquisite fleet of vehicles for an unforgettable experience.</p>
             <div className='card p-2'>
                 <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active" data-bs-interval="10000">
                             <img src={Specialpackage} className="d-block w-100" alt="..." />
                         </div>
-                        <div class="carousel-item" data-bs-interval="2000">
+                        <div className="carousel-item" data-bs-interval="2000">
                             <img src={Specialpackage} className="d-block w-100" alt="..." />
                         </div>
-                        <div class="carousel-item">
+                        <div className="carousel-item">
                             <img src={Specialpackage} className="d-block w-100" alt="..." />
                         </div>
                     </div>

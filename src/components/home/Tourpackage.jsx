@@ -26,7 +26,6 @@ const Tourpackage = ({ packages }) => {
             <p className='text-center mb-4'>
                 Where your journey begins with an exquisite fleet of vehicles for an unforgettable experience.
             </p>
-            {/* <div className="packages d-flex justify-content-center gap-3"> */}
             <Carousel responsive={responsive} infinite={true} autoPlay={true}
             >
                 {packages.map((item, key) => (
@@ -50,7 +49,6 @@ const Tourpackage = ({ packages }) => {
 
                 ))}
             </Carousel>
-            {/* </div> */}
         </div>
     )
 }

@@ -4,7 +4,32 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/Images/spark-car-nav-logo-1.png"
 function Pagesnav() {
-    const linksList = ["Home", "Hire a Driver", "Corporate Rent", "Blog", "About", "Contact us"]
+    const linksList = [
+        {
+            title: "Home",
+            route: '/'
+        },
+        {
+            title: "Hire a Driver",
+            route: '/'
+        },
+        ,
+        {
+            title: "Corporate Rent",
+            route: "/"
+        },
+        {
+            title: "Blog",
+            route: '/'
+        }
+        , {
+            title: "About",
+            route: '/about'
+        }, {
+            title: "Contact us",
+            route: '/contactus'
+
+        }]
     return (
         <>
             <nav className="navbar bg-transparent ">
@@ -17,7 +42,7 @@ function Pagesnav() {
                             <ul className='d-flex gap-5 mb-0'>
                                 {linksList.map((link, key) => (
                                     <li key={key} className='list-group-item fs-15'>
-                                        <Link className='text-decoration-none text-light fw-600'>{link}</Link>
+                                        <Link className='text-decoration-none text-light fw-600' to={link.route}>{link.title}</Link>
                                     </li>
                                 ))}
                             </ul>

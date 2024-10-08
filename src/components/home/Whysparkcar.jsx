@@ -12,7 +12,6 @@ const Whysparkcar = ({ benefitsList }) => {
     const leftRef = useRef(null);
     const rightRef = useRef(null);
     const centerRef = useRef(null);
-
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -42,17 +41,17 @@ const Whysparkcar = ({ benefitsList }) => {
                 <div className='col-3'>
                     <motion.div
                         className='col-6'
-                        initial={{ opacity: 0, x: 10 }} // Initial animation state
-                        animate={isVisible ? { opacity: 1, x: 0 } : {}}   // Animate only when visible
-                        transition={{ duration: 0.4, delay: 0.4 }} // Duration and delay
-                        ref={leftRef} // Ref to observe this content
+                        initial={{ opacity: 0, x: 10 }}
+                        animate={isVisible ? { opacity: 1, x: 0 } : {}}
+                        transition={{ duration: 0.4, delay: 0.4 }}
+                        ref={leftRef}
                     >
                         {leftBenefits.map((benefit, key) => (
                             <div key={key} className='d-flex gap-3'>
                                 <i className={`${benefit.icon} h-100 text-light rounded-2`} style={{ fontSize: "25px", background: "#1ecb15", padding: "12px" }}></i>
                                 <div>
                                     <h6 className='fw-600'>{benefit.title}</h6>
-                                    <p className='fs-14 text-grey lh-lg' style={{ width: "260px" }}>
+                                    <p className='fs-14 fw-500 text-grey lh-lg' style={{ width: "260px" }}>
                                         {benefit.content}
                                     </p>
                                 </div>
