@@ -62,10 +62,10 @@ const Whysparkcar = ({ benefitsList }) => {
                 </div>
                 <motion.div
                     className='col-6 px-4'
-                    initial={{ opacity: 0, y: 100 }} // Initial animation state
-                    animate={isVisible ? { opacity: 1, y: 0 } : {}}   // Animate only when visible
-                    transition={{ duration: 0.4, delay: 0.4 }} // Duration and delay
-                    ref={leftRef} // Ref to observe this content
+                    initial={{ opacity: 0, y: 150 }}
+                    animate={isVisible ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.4, delay: 0.4 }}
+                    ref={leftRef}
                 >
                     <div>
                         <img src={Car} alt="" className='w-100' />
@@ -74,11 +74,10 @@ const Whysparkcar = ({ benefitsList }) => {
 
                 <div className='col-3'>
                     <motion.div
-                        className='col-6'
-                        initial={{ opacity: 0, x: -10 }} // Initial animation state
-                        animate={isVisible ? { opacity: 1, x: 0 } : {}}   // Animate only when visible
-                        transition={{ duration: 0.4, delay: 0.4 }} // Duration and delay
-                        ref={leftRef} // Ref to observe this content
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={isVisible ? { opacity: 1, x: 0 } : {}}
+                        transition={{ duration: 0.4, delay: 0.4 }}
+                        ref={leftRef}
                     >
                         {rightBenefits.map((benefit, key) => (
                             <div key={key} className='d-flex gap-3'>
