@@ -23,6 +23,9 @@
 .fw-600 {
   font-weight: 600 !important;
 }
+.hire-driver-green-color {
+  color: #0caa4b;
+}
 .btn-bg-color {
   background: #1ecb15;
 }
@@ -223,4 +226,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.hire-driver-container .hire-driver-img {
+  background-image: url(./assets/Images/hire-driver-bg.jpeg);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
 }

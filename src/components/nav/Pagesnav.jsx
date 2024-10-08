@@ -11,7 +11,7 @@ function Pagesnav() {
         },
         {
             title: "Hire a Driver",
-            route: '/'
+            route: '/hiredriver'
         },
         ,
         {

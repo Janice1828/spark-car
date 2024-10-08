@@ -9,8 +9,8 @@ import ContainerFluidBreakpointExample from './Pages/ContainerFluidBreakpointExa
 import Contactus from './Pages/Contactus'
 import About from './Pages/About'
 import Corporaterent from './Pages/Corporaterent'
+import Hiredriver from './Pages/Hiredriver'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -19,6 +19,7 @@ function App() {
         <Route path='/about' Component={About} />
         <Route path='/contactus' Component={Contactus} />
         <Route path='/corporaterent' Component={Corporaterent} />
+        <Route path='/hiredriver' Component={Hiredriver} />
       </Routes>
     </>
   )
