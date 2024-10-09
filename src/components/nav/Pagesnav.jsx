@@ -20,7 +20,7 @@ function Pagesnav() {
         },
         {
             title: "Blog",
-            route: '/'
+            route: '/blog'
         }
         , {
             title: "About",
@@ -36,7 +36,7 @@ function Pagesnav() {
                 <div className='w-100'>
                     <div className='d-flex justify-content-between align-items-center'>
                         <div className=''>
-                            <img src={logo} alt="" style={{ height: "50px" }} />
+                            <Link to="/">  <img src={logo} alt="" style={{ height: "50px" }} /> </Link>
                         </div>
                         <div>
                             <ul className='d-flex gap-5 mb-0'>

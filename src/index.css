@@ -11,6 +11,12 @@
 .fs-14 {
   font-size: 14px;
 }
+.fs-13 {
+  font-size: 13px;
+}
+.fs-12 {
+  font-size: 12px;
+}
 .fw-400 {
   font-weight: 400 !important;
 }
@@ -44,8 +50,14 @@
 .fs-18 {
   font-size: 18px;
 }
-.fs-18 {
-  font-size: 18px;
+.w-90 {
+  width: 90%;
+}
+.h-fit-content {
+  height: fit-content;
+}
+.w-fit-content {
+  width: fit-content;
 }
 .text-grey {
   color: rgb(114, 114, 114);
@@ -233,4 +245,11 @@
   background-size: cover;
   background-position-x: center;
   background-position-y: top;
+}
+.blog-bg-img {
+  background-image: url(./assets/Images/blog-bg.jpeg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  height: 300px;
+  background-position: 10% 38%;
 }

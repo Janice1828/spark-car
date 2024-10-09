@@ -10,6 +10,7 @@ import Contactus from './Pages/Contactus'
 import About from './Pages/About'
 import Corporaterent from './Pages/Corporaterent'
 import Hiredriver from './Pages/Hiredriver'
+import Blog from './Pages/Blog'
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/contactus' Component={Contactus} />
         <Route path='/corporaterent' Component={Corporaterent} />
         <Route path='/hiredriver' Component={Hiredriver} />
+        <Route path='/blog' Component={Blog} />
       </Routes>
     </>
   )
