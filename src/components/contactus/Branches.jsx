@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Branches = ({ branches }) => {
-    console.log(branches)
+    // console.log(branches)
     return (
         <>
             <h5 className="text-center fw-600">Our Branch Offices
