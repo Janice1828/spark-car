@@ -57,7 +57,6 @@ function Pagesnav() {
                         </div>
                         <div>
                             <button className="btn btn-bg-color text-light fs-14 fw-bold rounded-1 px-4 py-2 " data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign In</button>
-                            {/* Sign in signup modal */}
                             <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
@@ -160,7 +159,6 @@ function Pagesnav() {
                                     </div>
                                 </div>
                             </div>
-                            {/* Testing End */}
 
                         </div>
                     </div>
