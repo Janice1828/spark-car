@@ -45,7 +45,12 @@ function Pagesnav() {
                             <ul className='d-flex gap-5 mb-0'>
                                 {linksList.map((link, key) => (
                                     <li key={key} className='list-group-item fs-15'>
-                                        <Link className='text-decoration-none text-light fw-600' to={link.route}>{link.title}</Link>
+                                        <Link className='text-decoration-none d-flex flex-column nav-title text-light fw-600' to={link.route}><p className='mb-0'>{link.title}</p>
+                                            <a href="#" className='position-relative'>
+                                                <span className="start-0  bottom-0 w-0  hover-line position-absolute"></span>
+                                            </a>
+                                        </Link>
+
                                     </li>
                                 ))}
                             </ul>

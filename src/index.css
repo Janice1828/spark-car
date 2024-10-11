@@ -278,3 +278,12 @@
 .btn-box-shadow {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
 }
+.nav-title:hover .hover-line {
+  width: 100%;
+  transition: width 1s;
+}
+.hover-line {
+  height: 2px;
+  width: 0px;
+  background-color: #1ecb15;
+}
