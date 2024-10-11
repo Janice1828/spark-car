@@ -9,7 +9,7 @@ const Populartags = ({ tags, blogList, blogsUpdate }) => {
                 return blog;
             }
         })
-        // blogsUpdate(filterBlogs)
+        blogsUpdate(tagFilterData)
     }
     return (
         <div className='mt-5 pt-3'>

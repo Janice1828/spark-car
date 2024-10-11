@@ -8,9 +8,13 @@ import Populartags from '../components/blog/Populartags'
 import axios from 'axios'
 const Blog = () => {
     const [blogs, setBlogs] = useState([])
+    const [displayingBlogs, setDisplayingBlogs] = useState([]);
     const [tagsList, setTagsList] = useState([])
     useEffect(() => {
-        fetch("blogs.json").then((response) => response.json()).then((data) => setBlogs(data))
+        fetch("blogs.json").then((response) => response.json()).then((data) => {
+            setBlogs(data)
+            setDisplayingBlogs(data)
+        })
         axios.get("blogs-tags.json").then((data) => setTagsList(data.data))
     }, [])
     return (
@@ -23,11 +27,11 @@ const Blog = () => {
             </div>
             <div className="row px-md-6 gx-0 mt-4 pb-5 mb-5">
                 <div className="col-8">
-                    <Blogs blogList={blogs} />
+                    <Blogs blogList={displayingBlogs} />
                 </div>
                 <div className="col-4">
                     <Recentpost posts={blogs} />
-                    <Populartags tags={tagsList} blogList={blogs} blogsUpdate={setBlogs} />
+                    <Populartags tags={tagsList} blogList={blogs} blogsUpdate={setDisplayingBlogs} />
                 </div>
             </div>
             <div className="px-md-6 bg-opacity-100" style={{ background: "#000" }}>
