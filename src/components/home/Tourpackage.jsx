@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Modal from '../global/Modal';
 const Tourpackage = ({ packages }) => {
     const responsive = {
         superLargeDesktop: {
@@ -20,6 +21,29 @@ const Tourpackage = ({ packages }) => {
             items: 1
         }
     };
+    const buyButtons = [{
+        title: "BOOK",
+        bgColor: "tour-package-btn-bg-blue"
+        , close: false
+    },
+    {
+        title: "CLOSE",
+        bgColor: "bg-danger btn-box-shadow"
+        , close: true
+    }]
+    const buyFullWForms = [{
+        labelName: "Pick Up Location inside Kathmandu",
+        placeHolder: "From Location"
+    }
+    ]
+    const buyHalfWForms = [
+        {
+            labelName: "Pick Up Date",
+        },
+        {
+            labelName: "Drop Date",
+        },
+    ]
     return (
         <div className='mt-4 mb-5'>
             <h2 className='home-headings'>Tour Packages</h2>
@@ -41,16 +65,20 @@ const Tourpackage = ({ packages }) => {
                                 </div>
                                 <div>
                                     <p className='fs-14 fw-500 text-end d-flex gap-1 align-items-center'><i className="fa-regular fa-clock text-primary fw-500"></i>{item.time}</p>
-                                    <button className="btn btn-sm btn-bg-color text-light fw-600 px-3 py-1">Buy</button>
+                                    <button className="btn btn-sm btn-bg-color text-light fw-600 px-3 py-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Buy</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                ))}
-            </Carousel>
-        </div>
+                ))
+                }
+            </Carousel >
+            <div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <Modal headerTitle="Change Location and Time" footerBtns={buyButtons} fullWForms={buyFullWForms} halfWForms={buyHalfWForms} />
+                </div>
+            </div>
+        </div >
     )
 }
-
 export default Tourpackage

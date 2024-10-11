@@ -5,6 +5,7 @@ import Two from "../../assets/Icons/2.svg";
 import WindowIcon from "../../assets/Icons/3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Modal from '../global/Modal';
 const Explore = ({ packages }) => {
     const responsive = {
         superLargeDesktop: {
@@ -24,6 +25,34 @@ const Explore = ({ packages }) => {
             items: 1
         }
     };
+    const exploreButtons = [{
+        title: "Search",
+        bgColor: "btn-bg-color"
+        , close: false
+    },
+    {
+        title: "CANCEL",
+        bgColor: "bg-danger btn-box-shadow"
+        , close: true
+    }]
+    const exploreFullWForms = [
+        {
+            labelName: "Pick Up Location",
+            placeHolder: ""
+        },
+        {
+            labelName: "Drop Off Location",
+            placeHolder: ""
+        },
+    ]
+    const exploreHalfWForms = [
+        {
+            labelName: "Pick Up Date",
+        },
+        {
+            labelName: "Drop Date",
+        },
+    ]
     return (
         <div className='mt-4'>
             <h2 className='home-headings'>Explore the Spark Car Fleet </h2>
@@ -60,13 +89,18 @@ const Explore = ({ packages }) => {
                                         <h3 className='fw-bold'>2000</h3>
                                     </div>
                                     <div>
-                                        <a href="#" className='btn fs-14 fw-bolder btn-bg-color text-light rounded-1 '>Rent Now</a>
+                                        <button className="btn btn-sm btn-bg-color text-light fw-600 px-3 py-1" data-bs-toggle="modal" data-bs-target="#exploreExampleModal" data-bs-whatever="@mdo">Rent Now</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </Carousel>
+                <div>
+                    <div class="modal fade" id="exploreExampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <Modal headerTitle="Change Location and Time" footerBtns={exploreButtons} fullWForms={exploreFullWForms} halfWForms={exploreHalfWForms} />
+                    </div>
+                </div>
             </div>
         </div>
     )
