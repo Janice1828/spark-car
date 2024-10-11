@@ -106,10 +106,52 @@ function Pagesnav() {
                             <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
-                                        <div className="text-dark">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam corrupti minima et, assumenda quaerat perferendis, qui recusandae nisi sunt ex illo error harum. Minus atque nulla debitis excepturi natus.
+                                        <div>
+                                            <div className="text-dark row p-0 g-0">
+                                                <div className="col-6 py-5 px-3">
+                                                    <div className='text-center mb-4'>
+                                                        <img src={SigninLogo} className='w-50 m-auto ' alt="" />
+                                                    </div>
+                                                    <form action="" className='row w-100 p-0 gx-0 gy-0'>
+                                                        <div className='col-12 '>
+                                                            <label htmlFor="" className='form-label fs-15 mb-1'>Username</label>
+                                                            <div className='input-group'>
+
+                                                                <input type="text" className='form-control rounded-0 border-dark' placeholder='first name' />
+                                                                <input type="text" className='form-control rounded-0 border-dark' placeholder='last name' />
+                                                            </div>
+                                                        </div>
+                                                        <div className='col-12'>
+                                                            <label htmlFor="" className='form-label fs-15 mb-1'>Phone Number</label>
+                                                            <input type="text" className='form-control rounded-0 border-dark' />
+                                                        </div>
+                                                        <div className='col-12'>
+                                                            <label htmlFor="" className='form-label fs-15 mb-1'>Email</label>
+                                                            <input type="text" className='form-control rounded-0 border-dark' />
+                                                        </div>
+                                                        <div className='col-12'>
+                                                            <label htmlFor="" className='form-label fs-15 mb-1'>Password</label>
+                                                            <input type="text" className='form-control rounded-0 border-dark' />
+                                                        </div>
+                                                        <div className='col-12'>
+                                                            <label htmlFor="" className='form-label fs-15 mb-1'>Confirm Password</label>
+                                                            <input type="text" className='form-control rounded-0 border-dark' />
+                                                        </div>
+                                                        <button type="" className='col-12 mt-2 fs-15 fw-bold border-0 btn-bg-color text-light py-2 rounded-0 sign-in-btn'>REGISTER</button>
+                                                        <div className='col-12 text-center'>
+                                                            <a href="#" className='fs-12 text-decoration-none text-dark'>Already have an account?
+                                                                <button class="btn bg-transparent px-1 text-primary fw-500 fs-12" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign in </button>
+
+
+                                                            </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div className="col-6">
+                                                    <img src={SigninImg} className='w-100 h-100' alt="" />
+                                                </div>
+                                            </div>
                                         </div>
-                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
                                     </div>
                                 </div>
                             </div>
