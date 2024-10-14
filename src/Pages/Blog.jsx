@@ -36,12 +36,12 @@ const Blog = () => {
                     <Pagesnav />
                 </div>
             </div>
-            <div className="row px-md-6 gx-0 mt-4 pb-5 mb-5">
-                <div className="col-8">
+            <div className="row px-md-6 d-flex flex-wrap gx-0 mt-4 pb-5 mb-5">
+                <div className="col-xxl-8">
                     <Blogs blogList={displayingBlogs} />
                     <Pagination blogs={blogs} itemsPerPage={itemsPerPage} updateCurrentPage={setCurrentPage} currentIndex={currentPage} />
                 </div>
-                <div className="col-4">
+                <div className="col-xxl-4">
                     <Recentpost posts={blogs} />
                     <Populartags tags={tagsList} blogList={blogs} blogsUpdate={setDisplayingBlogs} />
                 </div>

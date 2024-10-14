@@ -302,4 +302,10 @@
     font-size: 18px !important;
     padding: 8px 20px 0px 20px !important;
   }
+  .blogs-title {
+    font-size: 18px !important;
+  }
+  .blog-card-body {
+    padding: 0px;
+  }
 }
