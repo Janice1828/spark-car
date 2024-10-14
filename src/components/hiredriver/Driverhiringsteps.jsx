@@ -5,7 +5,7 @@ const Driverhiringsteps = ({ data }) => {
         <div className='driver-hiring-steps-container my-4'>
             <h2 className='text-center fw-bold hire-driver-green-color mt-3 mb-4'>Hire a Driver in Nepal in Just Three Easy Steps
             </h2>
-            <div className="d-flex gap-3 justify-content-center">
+            <div className="d-flex gap-3 justify-content-center flex-wrap">
                 {data.map((step, key) => (
                     <div className='card px-3 pt-3 border-0' key={key} style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 40px 120px -40px", borderRadius: "8px", width: "380px", height: "fit-content" }}>
                         <div className="card-body">
