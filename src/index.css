@@ -72,6 +72,9 @@
 .text-grey {
   color: rgb(114, 114, 114);
 }
+.border-grey {
+  border-color: rgb(205, 205, 205) !important;
+}
 @media screen and (max-width: 768px) {
   .px-md-6 {
     padding: 0px 30px;

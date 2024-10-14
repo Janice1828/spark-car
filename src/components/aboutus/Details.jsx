@@ -36,7 +36,7 @@ const Details = ({ benefitsList }) => {
     }, []);
     return (
         <div className='row mt-4 mb-5'>
-            <h4 className='col-12 fw-600 text-center' style={{ letterSpacing: "-2px", fontSize: "28px", letterSpacing: "-2.5px" }}>Hiring a vehicle? You're at the right place.
+            <h4 className='col-12 fw-600 text-center' style={{ fontSize: "28px", letterSpacing: "-2.5px" }}>Hiring a vehicle? You're at the right place.
             </h4>
             <p className='col-12 text-center fw-600 mb-4' style={{ letterSpacing: "-1px" }}>Spark Car, तपाइको यात्राको सहयात्री।</p>
             <div className='col-3'>
