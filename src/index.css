@@ -317,3 +317,18 @@
     bottom: 0px !important;
   }
 }
+.fa-bars {
+  border: 1px solid #fff;
+  padding: 7px 10px;
+  border-radius: 4px;
+}
+.navbar-toggler {
+  padding: 0px !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.responsive-pages-links .active {
+  color: #00c500 !important;
+  width: fit-content;
+}

@@ -1,18 +1,15 @@
 import React from 'react'
-
 const Latestblog = ({ blogs }) => {
-
     return (
         <div className='mt-sm-5 mb-sm-5'>
             <h2 className='home-headings pt-5'>Latest Blogs</h2>
-            <div className='d-flex gap-2 justify-content-center flex-wrap'>
+            <div className='d-flex gap-2 justify-content-center flex-wrap flex-xl-nowrap'>
                 {blogs.map((blog, key) => (
                     <div key={key} className='card  bg-transparent border-0'>
                         <div className='card-header bg-transparent border-0'>
                             <h5 className='btn-bg-color text-light fw-600 d-flex align-items-center text-center py-2 position-absolute' style={{ width: "60px" }}>{blog.postedDate}</h5>
                             <div>
                                 <img src={blog.img} alt="" className='img-fluid' />
-
                             </div>
                         </div>
                         <div className="card-body m-auto" style={{

@@ -6,6 +6,7 @@ import logo from "../../assets/Images/spark-car-nav-logo-1.png"
 import SigninImg from "../../assets/Images/sign-in.jpeg"
 import SigninLogo from "../../assets/Images/sign-in-logo.png"
 import Google from "../../assets/Images/google.png"
+import { NavLink } from 'react-router-dom';
 function Pagesnav() {
     const linksList = [
         {
@@ -35,9 +36,9 @@ function Pagesnav() {
         }]
     return (
         <>
-            <nav className="d-none d-lg-block navbar pages-nav-container bg-transparent ">
-                <div className='w-100'>
-                    <div className='d-flex justify-content-between align-items-center'>
+            <nav className="navbar pages-nav-container bg-transparent ">
+                <div className='w-100 d-flex d-xl-block justify-content-end'>
+                    <div className='d-none d-xl-flex justify-content-between align-items-center'>
                         <div className=''>
                             <Link to="/">  <img src={logo} alt="" style={{ height: "50px" }} /> </Link>
                         </div>
@@ -159,19 +160,29 @@ function Pagesnav() {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                    <button className="navbar-toggler d-block d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler d-block d-xl-none text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
                     </button>
-                    <div className="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div className="offcanvas-header">
-                            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <div className="offcanvas d-block offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style={{ background: "#DDDDDD" }}>
+                        <div className="offcanvas-header d-block">
+                            <h5 className="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div className="offcanvas-body">
-                            Lorem
+                        <div className="offcanvas-body" >
+                            <ul className='d-flex gap-3 flex-column mb-0 responsive-pages-links'>
+                                {linksList.map((link, key) => (
+                                    <li key={key} className='list-group-item fs-15 border-bottom border-light pb-1'>
+                                        <NavLink className='text-decoration-none d-flex flex-column nav-title text-dark fw-600 fs-14' to={link.route}><p className='mb-0'>{link.title}</p>
+                                            <div className='position-relative'>
+                                                <span className="start-0  bottom-0 w-0  hover-line position-absolute"></span>
+                                            </div>
+                                        </NavLink>
+
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -31,8 +31,8 @@ const Modal = ({ headerTitle, footerBtns, fullWForms, halfWForms }) => {
                     </form>
                 </div>
                 <div className="modal-footer">
-                    {footerBtns.map((btn) => (
-                        <button type='button' className={`${btn.bgColor} text-light border-0 rounded-1 px-4 py-2 fs-12`} data-bs-dismiss={btn.close ? 'modal' : undefined}>{btn.title}</button>
+                    {footerBtns.map((btn, key) => (
+                        <button type='button' key={key} className={`${btn.bgColor} text-light border-0 rounded-1 px-4 py-2 fs-12`} data-bs-dismiss={btn.close ? 'modal' : undefined}>{btn.title}</button>
                     ))}
 
                 </div>
