@@ -11,7 +11,7 @@ const Questions = ({ questions }) => {
             </h2>
             <div className='row'>
                 {questions.map((question, key) => (
-                    <div className='col-6' key={key}>
+                    <div className='col-xxl-6' key={key}>
                         <button
                             type='button'
                             data-bs-toggle="collapse"

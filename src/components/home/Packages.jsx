@@ -31,24 +31,24 @@ const Packages = ({ packages }) => {
         },
     ]
     return (
-        <div className='mb-5 mt-5'>
+        <div className='mb-sm-5 mt-sm-5'>
             <h2 className='home-headings pt-5'>Our Special Packages</h2>
             <p className='fs-15 fw-500 mb-5 text-grey text-center'>Where your journey begins with an exquisite fleet of vehicles for an unforgettable experience.</p>
             <div className='card p-2'>
                 <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item position-relative active" data-bs-interval="10000">
-                            <img src={Specialpackage} className="d-block w-100" alt="..." />
-                            <button className='btn-bg-color position-absolute border-0 rounded-1 fs-14 px-4 text-light py-2 fw-600' style={{ bottom: "10px", right: "10px", zIndex: "100" }} data-bs-toggle="modal" data-bs-target="#packagesExampleModal" data-bs-whatever="@mdo">Rent Now</button>
+                            <img src={Specialpackage} className="d-block img-fluid" alt="..." />
+                            <button className='btn-bg-color position-absolute border-0 rounded-1 fs-14 px-4 text-light py-2 fw-600 rent-now-btn' style={{ bottom: "10px", right: "10px", zIndex: "100" }} data-bs-toggle="modal" data-bs-target="#packagesExampleModal" data-bs-whatever="@mdo">Rent Now</button>
                         </div>
                         <div className="carousel-item position-relative" data-bs-interval="2000">
-                            <img src={Specialpackage} className="d-block w-100" alt="..." />
-                            <button className='btn-bg-color position-absolute border-0 rounded-1 fs-14 px-4 text-light py-2 fw-600' style={{ bottom: "10px", right: "10px", zIndex: "100" }} data-bs-toggle="modal" data-bs-target="#packagesExampleModal" data-bs-whatever="@mdo">Rent Now</button>
+                            <img src={Specialpackage} className="d-block img-fluid" alt="..." />
+                            <button className='btn-bg-color position-absolute border-0 rounded-1 fs-14 px-4 text-light py-2 fw-600 rent-now-btn' style={{ bottom: "10px", right: "10px", zIndex: "100" }} data-bs-toggle="modal" data-bs-target="#packagesExampleModal" data-bs-whatever="@mdo">Rent Now</button>
 
                         </div>
                         <div className="carousel-item position-relative">
-                            <img src={Specialpackage} className="d-block w-100" alt="..." />
-                            <button className='btn-bg-color position-absolute border-0 rounded-1 fs-14 px-4 text-light py-2 fw-600' style={{ bottom: "10px", right: "10px", zIndex: "100" }} data-bs-toggle="modal" data-bs-target="#packagesExampleModal" data-bs-whatever="@mdo">Rent Now</button>
+                            <img src={Specialpackage} className="d-block img-fluid" alt="..." />
+                            <button className='btn-bg-color position-absolute border-0 rounded-1 fs-14 px-4 text-light py-2 fw-600 rent-now-btn' style={{ bottom: "10px", right: "10px", zIndex: "100" }} data-bs-toggle="modal" data-bs-target="#packagesExampleModal" data-bs-whatever="@mdo">Rent Now</button>
 
                         </div>
                     </div>

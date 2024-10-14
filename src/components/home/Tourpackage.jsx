@@ -45,7 +45,7 @@ const Tourpackage = ({ packages }) => {
         },
     ]
     return (
-        <div className='mt-4 mb-5'>
+        <div className='mt-sm-4 mt-5 mb-5 pb-3 pb-sm-0'>
             <h2 className='home-headings'>Tour Packages</h2>
             <p className='text-center mb-4'>
                 Where your journey begins with an exquisite fleet of vehicles for an unforgettable experience.

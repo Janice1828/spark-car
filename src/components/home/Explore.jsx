@@ -54,7 +54,7 @@ const Explore = ({ packages }) => {
         },
     ]
     return (
-        <div className='mt-4'>
+        <div className='mt-sm-4 mt-5'>
             <h2 className='home-headings'>Explore the Spark Car Fleet </h2>
             <p className='fs-15 fw-500 text-grey text-center mb-5'>Where your journey begins with an exquisite fleet of vehicles for an unforgettable experience.</p>
             <div>

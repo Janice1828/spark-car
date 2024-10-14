@@ -36,7 +36,7 @@ const Home = () => {
     ];
     const contactNo = contacts[0].value;
     const socialMediaLinks = ["fa-brands fa-facebook", "fa-brands fa-twitter", "fa-brands fa-youtube", "fa-brands fa-linkedin"]
-   
+
     const services = [{
         title: "Choose Your Favorite Vehicle",
         content: "Select your preferred vehicle, tailored to your journey as per your requirement."
@@ -319,7 +319,7 @@ const Home = () => {
                     <Questions questions={questionAnser} />
                     <Rentalavailableplace places={placesList} />
                 </div>
-                <div className=" pt-4">
+                <div className=" pt-sm-4">
                     <div className='px-md-6 text-light mt-5' style={{ background: "#199E1C" }}>
                         <FurtherInformation number={contactNo} />
                     </div>

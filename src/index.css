@@ -308,4 +308,12 @@
   .blog-card-body {
     padding: 0px;
   }
+  .records {
+    height: 450px;
+  }
+  .rent-now-btn {
+    font-size: 11px;
+    padding: 2px 5px !important;
+    bottom: 0px !important;
+  }
 }

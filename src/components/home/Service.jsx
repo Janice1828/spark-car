@@ -9,16 +9,20 @@ const Service = ({ servicesList }) => {
         $(".pick-up-location").select2(
             {
                 placeholder: "Please enter from location",
+                width: "100%"
             }
         );
         $(".drop-off-location").select2(
             {
                 placeholder: "Please enter to location",
+                width: "100%"
             }
         );
         $(".vehicle-type").select2(
             {
                 placeholder: "Select a vehicle type",
+                width: "100%"
+
             })
         var now = new Date();
         var hours = now.getHours();
@@ -44,7 +48,6 @@ const Service = ({ servicesList }) => {
         $("#drop-date").datetimepicker();
         $(".drop-date").datetimepicker();
         $("#empty-pick-up-date").datetimepicker();
-
     });
     return (
         <div className='home-service-container'>
@@ -52,7 +55,7 @@ const Service = ({ servicesList }) => {
             </h3>
             <div className="card mb-5">
                 <div className="card-body row py-3">
-                    <div className="col-4">
+                    <div className="col-sm-4">
                         <p className='fs-15 fw-600'>Choose a service</p>
                         <ul className="nav nav-pills d-flex mb-3" id="pills-tab" role="tablist">
                             <li className="nav-item" role="presentation">
@@ -112,7 +115,7 @@ const Service = ({ servicesList }) => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-8">
+                    <div className="col-sm-8">
                         <div className="tab-content" id="pills-tabContent">
                             <div
                                 className="tab-pane fade show active"
@@ -121,24 +124,23 @@ const Service = ({ servicesList }) => {
                                 aria-labelledby="pills-home-tab"
                             >
                                 <form action="#" className='row gy-3'>
-                                    <div className="col-6">
+                                    <div className="col-sm-6 col-12">
                                         <label htmlFor="" className='form-label fs-15 fw-600'>Pick Up Location</label>
                                         <select className="pick-up-location form-select" style={{ fontSize: "14px", height: "40px" }} name="state">
                                             <option ></option>
                                         </select>
                                     </div>
-                                    <div className="col-6"><label htmlFor="" className='form-label fs-15 fw-600'>
+                                    <div className="col-sm-6 col-12"><label htmlFor="" className='form-label fs-15 fw-600'>
                                         Drop Off Location</label>
                                         <select className="drop-off-location form-select" style={{ fontSize: "14px", height: "40px" }} name="state">
                                             <option ></option>
                                         </select>
-                                        {/* <input type="text" className="form-control rounded-1" /> */}
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-sm-6">
                                         <label htmlFor="" className='fs-15 fw-600 form-label'>Pick Up Date</label>
                                         <input type="text" className='form-control rounded-1' id='pick-up-date' />
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-sm-6">
                                         <label htmlFor="" className='fs-15 fw-600 form-label'>Drop Date</label>
                                         <input type="text" className='form-control rounded-1' id='drop-date' />
                                     </div>
@@ -155,13 +157,13 @@ const Service = ({ servicesList }) => {
                                 aria-labelledby="pills-profile-tab"
                             >
                                 <form action="#" className='row gy-3'>
-                                    <div className="col-6">
+                                    <div className="col-sm-6">
                                         <label htmlFor="" className='form-label fs-15 fw-600'>Pick Up Location</label>
                                         <select className="pick-up-location form-select" style={{ fontSize: "14px", height: "40px" }} name="state">
                                             <option ></option>
                                         </select>
                                     </div>
-                                    <div className="col-6"><label htmlFor="" className='form-label fs-15 fw-600'>
+                                    <div className="col-sm-6"><label htmlFor="" className='form-label fs-15 fw-600'>
                                         Drop Off Location</label>
 
                                         <select className="drop-off-location form-select" style={{ fontSize: "14px", height: "40px" }} name="state">
@@ -169,15 +171,15 @@ const Service = ({ servicesList }) => {
                                         </select>
 
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-sm-6">
                                         <label htmlFor="" className='fs-15 fw-600 form-label'>Pick Up Date</label>
                                         <input type="text" className='form-control rounded-1' id='empty-pick-up-date' />
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-sm-6">
                                         <label htmlFor="" className='fs-15 fw-600 form-label'>Drop Date</label>
                                         <input type="text" className='form-control rounded-1 drop-date' />
                                     </div>
-                                    <div className='col-6'>
+                                    <div className='col-sm-6'>
                                         <label htmlFor="" className="form-label fs-15 fw-600">Vehicle Type To Drive</label>
                                         <select className="vehicle-type form-select" style={{ fontSize: "14px", height: "40px" }} name="state">
                                             <option ></option>
@@ -196,21 +198,21 @@ const Service = ({ servicesList }) => {
                                 aria-labelledby="pills-contact-tab"
                             >
                                 <form action="#" className='row gy-3'>
-                                    <div className="col-6">
+                                    <div className="col-sm-6">
                                         <label htmlFor="" className='form-label fs-15 fw-600'>From</label>
                                         <input type="text" className="form-control rounded-1" placeholder='Trade Tower, Thapathali, Kathmandu' disabled style={{ fontSize: "14px" }} />
                                     </div>
-                                    <div className="col-6"><label htmlFor="" className='form-label fs-15 fw-600'>
+                                    <div className="col-sm-6"><label htmlFor="" className='form-label fs-15 fw-600'>
                                         To</label>
                                         <select className="drop-off-location form-select" style={{ fontSize: "14px", height: "40px" }} name="state">
                                             <option ></option>
                                         </select>
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-sm-6">
                                         <label htmlFor="" className='fs-15 fw-600 form-label'>From Date</label>
                                         <input type="text" className='form-control rounded-1 drop-date' />
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-sm-6">
                                         <label htmlFor="" className='fs-15 fw-600 form-label'>To Date</label>
                                         <input type="text" className='form-control rounded-1 drop-date' />
                                     </div>
@@ -226,11 +228,11 @@ const Service = ({ servicesList }) => {
                     </div>
                 </div>
             </div >
-            <div className='d-flex pt-5 mb-0'>
+            <div className='d-flex pt-sm-5 pt-3 mb-0 flex-column flex-sm-row '>
                 {servicesList.map((service, key) => (
-                    <div key={key} className={`service-${key}`}>
-                        <h5 style={{ width: "255px", fontSize: "18px" }} className='fw-600 mb-3'>{service.title}</h5>
-                        <p className='fs-14' style={{ width: "280px" }}>{service.content}</p>
+                    <div key={key} className={`service-${key} mb-5 mb-sm-0`}>
+                        <h5 style={{ fontSize: "18px" }} className='fw-600 mb-3'>{service.title}</h5>
+                        <p className='fs-14' >{service.content}</p>
                     </div>
                 ))}
             </div>

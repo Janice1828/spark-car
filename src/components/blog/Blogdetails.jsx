@@ -27,7 +27,7 @@ const Blogdetails = () => {
             </div>
             <div className="px-md-6 mx-5 mb-5">
                 <div className="row">
-                    <div className="col-8">
+                    <div className="col-xl-8">
                         <h4 className='fw-600' style={{ letterSpacing: "-1px" }}>
                             {displayingArr.length > 0 ? displayingData.title : ' '}
                         </h4>
@@ -35,7 +35,7 @@ const Blogdetails = () => {
                             {displayingArr.length > 0 ? displayingData.content : ' '}
                         </p>
                     </div>
-                    <div className="col-4">
+                    <div className="col-xl-4">
                         <Recentpost posts={fetchedBlog} />
                     </div>
                 </div>
