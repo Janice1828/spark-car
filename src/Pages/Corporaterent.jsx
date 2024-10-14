@@ -56,7 +56,7 @@ const Corporaterent = () => {
         <div className="px-md-6">
           <Pagesnav />
           <div className='text-center mt-5'>
-            <button style={{ background: "#0CAA4B" }} className='px-5 pt-3 pb-2  text-light rounded-0 outilne-0 border-0'>
+            <button style={{ background: "#0CAA4B" }} className=' be-partner px-5 pt-3 pb-2  text-light rounded-0 outilne-0 border-0'>
               <h4 className='fw-600'>BE A PARTNER</h4>
             </button>
           </div>

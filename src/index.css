@@ -297,3 +297,9 @@
 .rotate {
   transform: rotate(90deg);
 }
+@media screen and (max-width: 576px) {
+  .be-partner {
+    font-size: 18px !important;
+    padding: 8px 20px 0px 20px !important;
+  }
+}

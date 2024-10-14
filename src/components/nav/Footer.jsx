@@ -23,7 +23,7 @@ const Footer = () => {
                     <p className='fs-14 fw-500 d-flex gap-2 align-items-center'><i className="fa-solid fa-phone text-green fs-15"></i><span>01-5971616/ 9801101924</span></p>
                     <p className='fs-14 fw-500 d-flex gap-2 align-items-center'><i className="fa-solid fa-envelope text-green fs-15"></i><span>info@sparkcar.org</span></p>
                     <h5 className='fs-18 fw-600 mb-3'>ISO Certification</h5>
-                    <div className='d-flex gap-2'>
+                    <div className='d-flex gap-2 flex-wrap'>
                         {isoCertifications.map((certificate, key) => (
                             <img src={certificate} key={key} alt='' style={{ width: "80px" }} />
                         ))}
@@ -45,7 +45,6 @@ const Footer = () => {
                         {footerSocialMediaLinks.map((media, key) => (
                             <div key={key} className='bg-light rounded-circle d-flex align-items-center justify-content-center' style={{ height: "30px", width: "30px" }}>
                                 <i className={`${media} text-success`} style={{ fontSize: "17px" }}></i>
-
                             </div>
                         ))}
                     </div>
