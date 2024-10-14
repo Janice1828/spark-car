@@ -64,7 +64,7 @@ const Packages = ({ packages }) => {
 
             </div>
             <div>
-                <div class="modal fade" id="packagesExampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal fade" id="packagesExampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <Modal headerTitle="Change Location and Time" footerBtns={packageseButtons} fullWForms={packagesFullWForms} halfWForms={packagesHalfWForms} />
                 </div>
             </div>

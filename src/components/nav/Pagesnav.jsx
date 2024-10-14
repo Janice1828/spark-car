@@ -46,9 +46,9 @@ function Pagesnav() {
                                 {linksList.map((link, key) => (
                                     <li key={key} className='list-group-item fs-15'>
                                         <Link className='text-decoration-none d-flex flex-column nav-title text-light fw-600' to={link.route}><p className='mb-0'>{link.title}</p>
-                                            <a href="#" className='position-relative'>
+                                            <div className='position-relative'>
                                                 <span className="start-0  bottom-0 w-0  hover-line position-absolute"></span>
-                                            </a>
+                                            </div>
                                         </Link>
 
                                     </li>
@@ -57,9 +57,9 @@ function Pagesnav() {
                         </div>
                         <div>
                             <button className="btn btn-bg-color text-light fs-14 fw-bold rounded-1 px-4 py-2 " data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign In</button>
-                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
+                            <div className="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div className="modal-dialog modal-dialog-centered">
+                                    <div className="modal-content">
                                         <div className="text-dark row p-0 g-0">
                                             <div className="col-6 py-5 px-3">
                                                 <div className='text-center mb-4'>
@@ -80,7 +80,7 @@ function Pagesnav() {
                                                     </div>
                                                 </form>
                                                 <div>
-                                                    <div className='fs-13 text-center'>Don't have an account?<button data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" class="btn bg-transparent border-0 fs-13 text-primary fw-500  px-1">Create One</button></div>
+                                                    <div className='fs-13 text-center'>Don't have an account?<button data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" className="btn bg-transparent border-0 fs-13 text-primary fw-500  px-1">Create One</button></div>
                                                     <div className='text-center mb-2'><a href="#" className='text-decoration-none fs-14 '>or sign in with</a></div>
                                                     <div className='d-flex justify-content-center mb-3'>
                                                         <button className='border-0 bg-grey rounded-1 p-2 fs-14 d-flex gap-2 align-items-center'><img src={Google} style={{ height: "20px", background: "transparent" }} alt="" /> Sign In With Google</button>
@@ -107,9 +107,9 @@ function Pagesnav() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
+                            <div className="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div className="modal-dialog modal-dialog-centered">
+                                    <div className="modal-content">
                                         <div>
                                             <div className="text-dark row p-0 g-0">
                                                 <div className="col-6 py-5 px-3">
@@ -144,7 +144,7 @@ function Pagesnav() {
                                                         <button type="" className='col-12 mt-2 fs-15 fw-bold border-0 btn-bg-color text-light py-2 rounded-0 sign-in-btn'>REGISTER</button>
                                                         <div className='col-12 text-center'>
                                                             <a href="#" className='fs-12 text-decoration-none text-dark'>Already have an account?
-                                                                <button class="btn bg-transparent px-1 text-primary fw-500 fs-12" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign in </button>
+                                                                <button className="btn bg-transparent px-1 text-primary fw-500 fs-12" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign in </button>
 
 
                                                             </a>
