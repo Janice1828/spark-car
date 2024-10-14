@@ -75,14 +75,15 @@
 .border-grey {
   border-color: rgb(205, 205, 205) !important;
 }
+.px-md-6 {
+  padding: 0px 110px;
+}
 @media screen and (max-width: 768px) {
   .px-md-6 {
     padding: 0px 30px;
   }
 }
-.px-md-6 {
-  padding: 0px 110px;
-}
+
 /* For Home Page */
 .home-services {
   background-image: url(./assets/Images/spark-car-home-bg.png);

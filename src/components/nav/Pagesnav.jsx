@@ -35,7 +35,7 @@ function Pagesnav() {
         }]
     return (
         <>
-            <nav className="navbar pages-nav-container bg-transparent ">
+            <nav className="d-none d-lg-block navbar pages-nav-container bg-transparent ">
                 <div className='w-100'>
                     <div className='d-flex justify-content-between align-items-center'>
                         <div className=''>

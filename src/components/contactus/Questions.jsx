@@ -4,7 +4,7 @@ const Questions = () => {
     return (
         <>
             <div className="row gx-4 px-0 mt-4 mb-2">
-                <div className="col-8 row gy-3">
+                <div className="col-lg-8 col-12 row gy-3">
                     <div className="col-12">
                         <h4 className='fw-600'>Do you have any question?
                         </h4>
@@ -27,7 +27,7 @@ const Questions = () => {
                         <button className="btn btn-bg-color text-light fs-15 fw-600 rounded-1 px-4">Send Message</button>
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-lg-4 col-12 mt-3 mt-lg-0">
                     <div className="card py-3 px-3" style={{ boxShadow: "3px 3px 9px rgba(164, 164, 186, 0.2)", border: "1px solid #dddddd" }}>
                         <div className="card-body">
                             <h5 className='fw-600 mb-3'>Head Office

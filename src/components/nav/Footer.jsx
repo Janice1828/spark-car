@@ -9,14 +9,14 @@ const Footer = () => {
     const footerSocialMediaLinks = ["fa-brands fa-facebook-f", "fa-brands fa-instagram", "fa-brands fa-linkedin-in", "fa-brands fa-youtube"]
     return (
         <div className='pt-5'>
-            <div className='row text-light pt-5'>
-                <div className="col-3">
+            <div className='row gy-4 gy-lg-0 text-light pt-5'>
+                <div className="col-lg-3 col-sm-6">
                     <h5 className='fs-18 fw-600 mb-3'>About us</h5>
                     <p className='fs-14 fw-500' style={{ lineHeight: "27px" }}>
                         Established in 1996, Spark Car stands as Nepal's best vehicle rental company, offering an unparalleled experience in travel. With a commitment to excellence, we provide car rental in Kathmandu and all over Nepal along with driver hire services marked by professionalism, at the best price.
                     </p>
                 </div>
-                <div className="col-3">
+                <div className="col-lg-3 col-sm-6">
                     <h5 className='fs-18 fw-600 mb-3'>Contact Info
                     </h5>
                     <p className='fs-14 fw-500 d-flex gap-2 align-items-center'><i className="fa-solid fa-location-dot text-green fs-15"></i><span>Trade Tower Thapathali, address2</span></p>
@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className="col-3">
+                <div className="col-lg-3 col-sm-6">
                     <h5 className='fs-18 fw-600 mb-3'>Quick Links</h5>
                     <ul className='px-0'>
                         <li className='list-group-item'><a href="#" className='fs-14 fw-500 text-decoration-none text-light'>About</a></li>
@@ -39,7 +39,7 @@ const Footer = () => {
                         <li className='list-group-item'><a href="#" className='fs-14 fw-500 text-decoration-none text-light'>Register as Vendor</a></li>
                     </ul>
                 </div>
-                <div className="col-3">
+                <div className="col-lg-3 col-sm-6">
                     <h5 className='fs-18 fw-600 mb-3'>Social Network</h5>
                     <div className='d-flex gap-1'>
                         {footerSocialMediaLinks.map((media, key) => (
@@ -49,7 +49,7 @@ const Footer = () => {
                             </div>
                         ))}
                     </div>
-                    <h5 className='fs-18 fw-600 mt-2 mb-3'>Download</h5>
+                    <h5 className='fs-18 fw-600 mt-4 mt-lg-2 mb-3'>Download</h5>
                     <div>
                         <a href="#" className='d-block' style={{ width: "150px" }}>
                             <img src={Appstore} alt="" className='w-100' />
@@ -59,7 +59,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <div className="col-12 mt-5 d-flex justify-content-between py-4" style={{ borderTop: "1px solid rgba(255, 255, 255, .3)" }}>
+                <div className="col-12 mt-5 d-flex flex-wrap justify-content-between py-4" style={{ borderTop: "1px solid rgba(255, 255, 255, .3)" }}>
                     <div className='fs-15 fw-500'>copyright 2023 - sparkcar</div>
                     <div className='fs-15 fw-500'>Privacy Policy</div>
                 </div>

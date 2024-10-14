@@ -45,7 +45,6 @@ const Contactus = () => {
             <div className="contact-us-img">
                 <div className='px-md-6'>
                     <Pagesnav />
-
                 </div>
             </div>
             <div className="px-md-6">
@@ -54,7 +53,6 @@ const Contactus = () => {
                 <Map />
             </div>
             <div className="px-md-6 bg-opacity-100" style={{ background: "#000" }}>
-
                 <Footer />
             </div>
         </div>
