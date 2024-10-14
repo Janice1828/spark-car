@@ -13,7 +13,6 @@ import Hiredriver from './Pages/Hiredriver'
 import Blog from './Pages/Blog'
 import Blogdetails from './components/blog/Blogdetails'
 function App() {
-
   return (
     <>
       <Routes>
