@@ -64,7 +64,7 @@
   },
   {
     "id": "10",
-    "img": "../src/assets/Images/10.png",
+    "img": "./assets/Images/10.png",
     "title": "Night Driving Safety: 10 Essential Tips for Driving After Dark",
     "content": "confidently after dark. Learn how to stay safe on the roads at night.",
     "date": "28 Jun 2024"
