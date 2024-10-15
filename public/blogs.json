@@ -1,21 +1,21 @@
 [
   {
     "id": "1",
-    "img": "/src/assets/Images/1.png",
+    "img": "/Images/1.png",
     "title": "Dashain Travels Made Easy with Spark Car Rental: Pre-Booking Now Open!",
     "content": "This year, Spark Car Rental is here to make your Dashain travels easier than ever, offering pre-booking services to help you secure the pe..",
     "date": "16 Sep 2024"
   },
   {
     "id": "2",
-    "img": "/src/assets/Images/2.png",
+    "img": "/Images/2.png",
     "title": "Hiace Van Rental in Kathmandu, Nepal",
     "content": "Hiace van rental in Kathmandu, Nepal is best when you are traveling in a group, renting a Hiace in Kathmandu can be the perfect solution.",
     "date": "25 Aug 2024"
   },
   {
     "id": "3",
-    "img": "/src/assets/Images/3.png",
+    "img": "./Images/3.png",
     "title": "Why Customers Love Renting from Spark Car: Nepal’s Leading Vehicle Rental",
     "content": "As Nepal's first ISO-certified vehicle rental company, Spark Car has set the benchmark for quality, reliability, and customer satisfaction..",
     "date": "12 Aug 2024"
