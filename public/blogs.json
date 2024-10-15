@@ -50,14 +50,14 @@
   },
   {
     "id": "8",
-    "img": "/src/assets/Images/8.png",
+    "img": "../src/assets/Images/8.png",
     "title": "Types of Driver Hire Services at Spark Driver",
     "content": "Discover the various driver hire services available in Nepal, including one-time, part-time, full-time, long-drive, and night-time options..",
     "date": "08 Jul 2024"
   },
   {
     "id": "9",
-    "img": "../src/assets/Images/9.png",
+    "img": "../assets/Images/9.png",
     "title": "Vehicle Rental in Butwal | Rent a Car | SUV | EV | Jeep | Hiace | Bus",
     "content": "Are you planning a trip to Butwal? Look no further! Spark Car offers a wide range of vehicle rental options to suit every traveler's needs..",
     "date": "30 Jun 2024"
