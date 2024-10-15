@@ -15,28 +15,28 @@
   },
   {
     "id": "3",
-    "img": "./Images/3.png",
+    "img": "/Images/3.png",
     "title": "Why Customers Love Renting from Spark Car: Nepal’s Leading Vehicle Rental",
     "content": "As Nepal's first ISO-certified vehicle rental company, Spark Car has set the benchmark for quality, reliability, and customer satisfaction..",
     "date": "12 Aug 2024"
   },
   {
     "id": "4",
-    "img": "../src/assets/Images/4.png",
+    "img": "/Images/4.png",
     "title": "How Good and Bad Driving Affects Road Traffic?",
     "content": "In this blog, we'll explore how good and bad driving practices affect road traffic and why promoting good driving habits is essential for ..",
     "date": "05 Aug 2024"
   },
   {
     "id": "5",
-    "img": "/src/assets/Images/5.png",
+    "img": "/Images/5.png",
     "title": "E-Shuttle Rental in Nepal - Specifications, Capacity & Features",
     "content": "Spark Car presents the CG KYC Model E-shuttle, a perfect blend of eco-friendliness, comfort, and modern technology. This blog explores wha..",
     "date": "21 Jul 2024"
   },
   {
     "id": "6",
-    "img": "/6.png",
+    "img": "/Images/6.png",
     "title": "Why Hire a Professional Driver for Corporate Events and VIP Guest Arrival?",
     "content": "In this article, we will explore the various reasons why hiring a professional driver for corporate events and VIP arrivals is a smart cho..",
     "date": "19 Jul 2024"
@@ -50,21 +50,21 @@
   },
   {
     "id": "8",
-    "img": "/assets/Images/8.png",
+    "img": "/Images/8.png",
     "title": "Types of Driver Hire Services at Spark Driver",
     "content": "Discover the various driver hire services available in Nepal, including one-time, part-time, full-time, long-drive, and night-time options..",
     "date": "08 Jul 2024"
   },
   {
     "id": "9",
-    "img": "../assets/Images/9.png",
+    "img": "/Images/9.png",
     "title": "Vehicle Rental in Butwal | Rent a Car | SUV | EV | Jeep | Hiace | Bus",
     "content": "Are you planning a trip to Butwal? Look no further! Spark Car offers a wide range of vehicle rental options to suit every traveler's needs..",
     "date": "30 Jun 2024"
   },
   {
     "id": "10",
-    "img": "./assets/Images/10.png",
+    "img": "/Images/10.png",
     "title": "Night Driving Safety: 10 Essential Tips for Driving After Dark",
     "content": "confidently after dark. Learn how to stay safe on the roads at night.",
     "date": "28 Jun 2024"
