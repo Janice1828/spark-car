@@ -145,7 +145,7 @@ function Pagesnav() {
                                                         <button type="" className='col-12 mt-2 fs-15 fw-bold border-0 btn-bg-color text-light py-2 rounded-0 sign-in-btn'>REGISTER</button>
                                                         <div className='col-12 text-center'>
                                                             <a href="#" className='fs-12 text-decoration-none text-dark'>Already have an account?
-                                                                <button className="btn bg-transparent px-1 text-primary fw-500 fs-12" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign in </button>
+                                                                <button className="btn bg-transparent px-1 text-primary fw-500 fs-12" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" type='button'>Sign in </button>
 
 
                                                             </a>
