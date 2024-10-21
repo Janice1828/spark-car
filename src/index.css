@@ -78,6 +78,11 @@
 .px-md-6 {
   padding: 0px 110px;
 }
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: scroll !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .px-md-6 {
     padding: 0px 30px;
@@ -337,7 +342,4 @@
 .responsive-pages-links .active {
   color: #00c500 !important;
   width: fit-content;
-}
-body {
-  overflow: scroll !important;
 }
