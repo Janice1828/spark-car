@@ -1,9 +1,8 @@
 import React from 'react'
-
 const Branches = ({ branches }) => {
     return (
         <>
-            <h5 className="text-center fw-600 mt-4 mt-lg-0 mb-3 mb-lg-0">Our Branch Offices
+            <h5 className="text-center fw-600 mt-4 mt-lg-0 mb-3">Our Branch Offices
             </h5>
             <div className='row gx-3 px-0 gy-lg-5 gy-3 mb-3'>
                 {branches.map((branch, key) => (

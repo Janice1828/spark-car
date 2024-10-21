@@ -219,12 +219,9 @@ const Service = ({ servicesList }) => {
                                     <div className="col-12 d-flex justify-content-end mt-3 mb-4">
                                         <button className="btn fs-14 btn-bg-color text-light fw-600 rounded-1 ">Find Vehicle</button>
                                     </div>
-
                                 </form>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </div >

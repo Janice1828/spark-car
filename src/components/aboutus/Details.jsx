@@ -1,5 +1,5 @@
 import React from 'react'
-import Car from "../../assets/Images/about-us-car.png"
+import Car from "../../assets/Images/spark-car-home-car.png"
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useEffect } from 'react';

@@ -4,7 +4,6 @@ const Adventure = ({ adventureServices }) => {
 
     return (
         <div className='row pb-3 position-relative' style={{ zIndex: "1" }}>
-
             <div className='d-flex gap-4 flex-lg-nowrap flex-wrap justify-content-center'>
                 <div style={{ paddingRight: "40px" }}>
                     <h3 className='fw-600' style={{ letterSpacing: "-3px" }}>Let Your Adventure <br /> Begin

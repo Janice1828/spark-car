@@ -1,6 +1,3 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/Images/spark-car-nav-logo-1.png"
 import SigninImg from "../../assets/Images/sign-in.jpeg"
@@ -58,7 +55,7 @@ function Pagesnav() {
                         </div>
                         <div>
                             <button className="btn btn-bg-color text-light fs-14 fw-bold rounded-1 px-4 py-2 " data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign In</button>
-                            <div className="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div className="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabIndex="-1">
                                 <div className="modal-dialog modal-dialog-centered">
                                     <div className="modal-content">
                                         <div className="text-dark row p-0 g-0">
@@ -108,7 +105,7 @@ function Pagesnav() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div className="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabIndex="-1">
                                 <div className="modal-dialog modal-dialog-centered">
                                     <div className="modal-content">
                                         <div>
@@ -163,7 +160,7 @@ function Pagesnav() {
                         </div>
                     </div>
                     <button className="navbar-toggler d-block d-xl-none text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars"></i>
+                        <i className="fa-solid fa-bars"></i>
                     </button>
                     <div className="offcanvas d-block offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style={{ background: "#DDDDDD" }}>
                         <div className="offcanvas-header d-block">

@@ -97,7 +97,7 @@ const Explore = ({ packages }) => {
                     ))}
                 </Carousel>
                 <div>
-                    <div className="modal fade" id="exploreExampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal fade" id="exploreExampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <Modal headerTitle="Change Location and Time" footerBtns={exploreButtons} fullWForms={exploreFullWForms} halfWForms={exploreHalfWForms} />
                     </div>
                 </div>

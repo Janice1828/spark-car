@@ -1,4 +1,3 @@
-import { img } from 'framer-motion/client'
 import React from 'react'
 import valueOne from "../assets/Images/value-1.jpeg";
 import valueTwo from "../assets/Images/value-2.jpeg";

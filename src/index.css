@@ -104,7 +104,7 @@
 .home-adventure-container {
   background-image: url(./assets/Images/adventure-bg.png);
   color: #fff;
-  background-position-x: -72px;
+  /* background-position-x: -72px; */
   background-position-y: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -228,6 +228,9 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 400px;
+  background-attachment: fixed;
+  background-color: #a4a4a4;
+  background-blend-mode: darken;
 }
 .contactus-container .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
@@ -247,18 +250,21 @@
   font-size: 12px;
 }
 .corporate-rent-container .corporate-rent-img {
-  background-image: url(./assets/Images/corporate-rent-bg.jpeg);
+  background-image: url(/src/assets/Images/corporate-rent-bg.jpeg);
   height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #ababab;
+  background-blend-mode: darken;
+  background-attachment: fixed;
 }
 .hire-driver-container .hire-driver-img {
   background-image: url(./assets/Images/hire-driver-bg.jpeg);
   height: 400px;
   background-size: cover;
   background-position-x: center;
-  background-position-y: top;
+  background-position-y: center;
 }
 .blog-bg-img {
   background-image: url(./assets/Images/blog-bg.jpeg);
@@ -331,4 +337,7 @@
 .responsive-pages-links .active {
   color: #00c500 !important;
   width: fit-content;
+}
+body {
+  overflow: scroll !important;
 }

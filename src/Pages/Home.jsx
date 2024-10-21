@@ -15,7 +15,6 @@ import FurtherInformation from "../components/home/FurtherInformation"
 import Footer from '../components/nav/Footer';
 import Cartype from '../components/home/Cartype';
 import Pokhara from "../assets/Images/pokhara.jpg";
-import Ilam from "../assets/Images/ilam.jpg";
 import Mustang from "../assets/Images/mustang.jpg";
 import Lumbini from "../assets/Images/lumbini.jpg"
 import PickDrop from "../assets/Images/pick-drop.png";
@@ -36,7 +35,6 @@ const Home = () => {
     ];
     const contactNo = contacts[0].value;
     const socialMediaLinks = ["fa-brands fa-facebook", "fa-brands fa-twitter", "fa-brands fa-youtube", "fa-brands fa-linkedin"]
-
     const services = [{
         title: "Choose Your Favorite Vehicle",
         content: "Select your preferred vehicle, tailored to your journey as per your requirement."
@@ -167,7 +165,7 @@ const Home = () => {
         },
     ]
     const blogList = [{
-        img: blogOne,
+        img: blogThree,
         postedDate: "16 Sep",
         title: "Dashain Travels Made Easy with Spark Car Rental: Pre-Booking Now Open!",
         content: "This year, Spark Car Rental is here to make your Dashain travels easier than ever, offering pre-booking services to help you secure the pe.."
@@ -294,6 +292,7 @@ const Home = () => {
         },
     ]
     return (
+
         <div className="container-fluid gx-0 gy-0">
             <div>
                 <Contactsnav />

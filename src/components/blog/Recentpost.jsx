@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from "../../assets/Images/blog-test.png"
 import { Link } from 'react-router-dom';
 const Recentpost = ({ posts }) => {
     const displayingPosts = posts.slice(0, 5);

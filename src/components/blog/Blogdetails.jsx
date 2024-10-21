@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Contactsnav from '../nav/Contactsnav';
-import Pagesnav from '../nav/Pagesnav';
 import Footer from '../nav/Footer';
 import axios from 'axios';
 import Recentpost from './Recentpost';
@@ -9,7 +8,6 @@ const Blogdetails = () => {
     const params = new URLSearchParams(search)
     const uniqueValue = params.get("id")
     const [fetchedBlog, setFetchedBlog] = useState([])
-    const [tags, setTags] = useState([])
     useEffect(() => {
         axios.get("blogs.json").then((data) => {
             setFetchedBlog(data.data)

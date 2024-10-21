@@ -11,7 +11,7 @@ const Records = ({ records }) => {
             <div className='row gy-2'>
                 {records.map((record, key) => (
                     <div className='card col-xl-3 col-6 px-3 bg-transparent border-0 outline-0' key={key} >
-                        <div style={{ background: "rgba(255, 255, 255, .15)" }} className='d-flex justify-content-center py-xl-4 py-3'>
+                        <div style={{ background: "rgba(255, 255, 255, .22)" }} className='d-flex justify-content-center py-xl-4 py-3'>
                             <div className='text-center'>
                                 <h1 className='fw-600' style={{ color: "#1ecb15" }}>{record.count}</h1>
                                 <p className='text-light'>{record.title}</p>

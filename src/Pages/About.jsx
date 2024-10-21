@@ -9,7 +9,6 @@ import Rajesh from "../assets/Images/rajesh-hamal.jpeg"
 import Anil from "../assets/Images/anil.jpeg"
 import Akash from "../assets/Images/akash-golcha.jpeg"
 import Rishi from "../assets/Images/rishi-dhamal.jpeg"
-
 const About = () => {
     const benefits = [
         {

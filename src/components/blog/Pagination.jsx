@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Pagination = ({ blogs, itemsPerPage, updateCurrentPage, currentIndex }) => {
     const pagesList = [];
     const totalPages = Math.ceil(blogs.length / itemsPerPage)
@@ -13,7 +12,6 @@ const Pagination = ({ blogs, itemsPerPage, updateCurrentPage, currentIndex }) =>
         currentIndex > 1 ? updateCurrentPage(currentIndex - 1) : currentIndex
     }
     const nextBlog = () => {
-        // console.log(pagesList.length)
         currentIndex < pagesList.length ? updateCurrentPage(currentIndex + 1) : currentIndex
     }
     return (
